@@ -1,0 +1,38 @@
+small {
+    font-size: 75%;
+  }
+  
+  header {
+    background-color:gray;
+    border:purple solid 3px;
+  }
+  
+  .site-title {
+    color:paleturquoise;
+    text-align: center;
+  }
+  
+  nav .container {
+    display: flex;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  
+  nav .container li {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: darkorchid;
+    box-sizing: border-box;
+    background-color:darkgray;
+    list-style-type: none;
+  }
+  
+  nav .container a {
+    color:darkorchid;
+  }
+  
+  nav .container a:hover {
+    color: paleturquoise;
+  }
