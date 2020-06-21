@@ -2,6 +2,7 @@ import { Route } from "react-router-dom";
 import React, { Component } from "react";
 import Home from "./home/Home";
 import PlaylistList from "./playlist/PlaylistList";
+import PlaylistCard from "./playlist/PlaylistCard";
 
 class ApplicationViews extends Component {
   render() {
@@ -17,9 +18,17 @@ class ApplicationViews extends Component {
 
         <Route
           exact
-          path="/"
+          path="/playlists"
           render={(props) => {
             return <PlaylistList />;
+          }}
+        />
+
+        <Route
+          exact
+          path="/playlists"
+          render={(props) => {
+            return <PlaylistCard />;
           }}
         />
       </React.Fragment>
