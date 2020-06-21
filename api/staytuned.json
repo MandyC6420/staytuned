@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Samuel",
+      "lastName": "Bradley",
+      "email": "SamuelBradley@email.com",
+      "password": 123456
+    },
+    {
+      "id": 2,
+      "firstName": "Mary",
+      "lastName": "Houston",
+      "email": "MaryHouston@email.com",
+      "password": 78910
+    }
+  ],
+
+  "songs": [
+    {
+      "id": 1,
+      "songTitle": "Use Me",
+      "playlistId": 1,
+      "url": "https://www.youtube.com/watch?v=EZldnP0lhHA"
+    },
+    {
+      "id": 2,
+      "songTitle": "Lovely Day",
+      "playlistId": 1,
+      "url": "https://www.youtube.com/watch?v=oaLDut30Br0"
+    },
+    {
+      "id": 3,
+      "songTitle": "Get You",
+      "playlistId": 2,
+      "url": "https://www.youtube.com/watch?v=uQFVqltOXRg"
+    },
+    {
+      "id": 4,
+      "songTitle": "Lifetime",
+      "playlistId": 2,
+      "url": "https://www.youtube.com/watch?v=gMAHTZ2nBvk"
+    }
+  ],
+
+  "playlists": [
+    {
+      "id": 1,
+      "userId": 1,
+      "playlistTitle": "Uplifting Songs"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "playlistTitle": "Love Songs"
+    }
+  ]
+}

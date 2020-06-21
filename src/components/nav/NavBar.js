@@ -10,7 +10,7 @@ class NavBar extends Component {
     return (
       <header>
         <h1 className="site-title">Stay Tuned!<br />
-          <small>Keep Listening</small>
+          <small></small>
           {/* <Image src='/images/staytunedlogoa1.jpg' fluid /> */}
         </h1>
         <nav>
