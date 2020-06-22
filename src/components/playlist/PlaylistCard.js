@@ -9,7 +9,9 @@ class PlaylistCard extends Component {
           {/* <picture>
             <img src={require('./dog.svg')} alt="My Dog" />
           </picture> */}
-          <Link to={`/playlists/${this.props.playlists.id}`}><button>Details</button></Link>
+          <Link to={`/playlists/${this.props.playlists.id}`}>
+            <button>Details</button>
+          </Link>
           <h3>
             Playlist name:{" "}
             <span className="card-petname">

@@ -6,7 +6,9 @@ import { Link } from "react-router-dom";
 class PlaylistDetail extends Component {
   state = {
     name: "",
+    songs: [],
     // breed: "",
+    loadingStatus: true,
   };
 
   componentDidMount() {
@@ -15,6 +17,8 @@ class PlaylistDetail extends Component {
     PlaylistManager.get(this.props.playlistId).then((playlist) => {
       this.setState({
         name: playlist.playlistTitle,
+        songs: playlist.songs,
+        loadingStatus: false,
         // breed: animal.breed,
       });
     });
@@ -28,10 +32,22 @@ class PlaylistDetail extends Component {
             <img src={require("./dog.svg")} alt="My Dog" />
           </picture> */}
           <h3>
-            Name:{" "}
-            <span style={{ color: "darkslategrey" }}>{this.state.playlistTitle}</span>
+            Name:{this.state.name}
+            
           </h3>
-          
+          {this.state.songs.map((song) => {
+            return <p>{song.songTitle}</p>
+  
+            
+          })}
+          <button
+            type="button"
+            disabled={this.state.loadingStatus}
+            onClick={this.handleDelete}
+          >
+            Happy
+          </button>
+
           {/* <p>Breed: {this.state.breed}</p> */}
         </div>
       </div>

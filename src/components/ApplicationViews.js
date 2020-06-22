@@ -25,12 +25,9 @@ class ApplicationViews extends Component {
         />
 
         {/* Make sure you add the `exact` attribute here */}
-<Route exact path="/playlist" render={(props) => {
-  return <PlaylistList />
-}} />
-<Route path="/playlist/:playlistId(\d+)" render={(props) => {
+<Route path="/playlists/:playlistId(\d+)" render={(props) => {
   // Pass the animalId to the AnimalDetailComponent
-  return <PlaylistDetail animalId={parseInt(props.match.params.playlistId)}/>
+  return <PlaylistDetail playlistId={parseInt(props.match.params.playlistId)}{...props}/>
 }} />
 
       </React.Fragment>
