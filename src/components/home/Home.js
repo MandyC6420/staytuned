@@ -5,7 +5,7 @@ class Home extends Component {
     return (
       <address>
         Stay Tuned!
-        <br />Playlist Compiler
+        <br />Compose your own Playlist!
       </address>
     )
   }
