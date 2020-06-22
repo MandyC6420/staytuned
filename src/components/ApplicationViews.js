@@ -2,8 +2,8 @@ import { Route } from "react-router-dom";
 import React, { Component } from "react";
 import Home from "./home/Home";
 import PlaylistList from "./playlist/PlaylistList";
-import PlaylistCard from "./playlist/PlaylistCard";
-
+// import PlaylistCard from "./playlist/PlaylistCard";
+import PlaylistDetail from "./playlist/PlaylistDetail"
 class ApplicationViews extends Component {
   render() {
     return (
@@ -24,13 +24,15 @@ class ApplicationViews extends Component {
           }}
         />
 
-        <Route
-          exact
-          path="/playlists"
-          render={(props) => {
-            return <PlaylistCard />;
-          }}
-        />
+        {/* Make sure you add the `exact` attribute here */}
+<Route exact path="/playlist" render={(props) => {
+  return <PlaylistList />
+}} />
+<Route path="/playlist/:playlistId(\d+)" render={(props) => {
+  // Pass the animalId to the AnimalDetailComponent
+  return <PlaylistDetail animalId={parseInt(props.match.params.playlistId)}/>
+}} />
+
       </React.Fragment>
     );
   }

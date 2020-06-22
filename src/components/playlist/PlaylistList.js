@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 //import the components we will need
 import PlaylistCard from './PlaylistCard'
 import PlaylistManager from '../../modules/PlaylistManager'
+import "./../playlist/PlaylistCard";
 
 class PlaylistList extends Component {
     //define what this component needs to render
@@ -15,8 +16,9 @@ componentDidMount(){
     PlaylistManager.getAll()
     .then((playlists) => {
         this.setState({
-            playlist: playlists
+            playlists: playlists
         })
+        console.log(playlists)
     })
 }
 
