@@ -3,7 +3,8 @@ import React, { Component } from "react";
 import Home from "./home/Home";
 import PlaylistList from "./playlist/PlaylistList";
 // import PlaylistCard from "./playlist/PlaylistCard";
-import PlaylistDetail from "./playlist/PlaylistDetail"
+import PlaylistDetail from "./playlist/PlaylistDetail";
+import CreateSongForm from "./playlist/CreateSongForm";
 class ApplicationViews extends Component {
   render() {
     return (
@@ -20,16 +21,47 @@ class ApplicationViews extends Component {
           exact
           path="/playlists"
           render={(props) => {
-            return <PlaylistList />;
+            return <PlaylistList {...props} />;
           }}
         />
+        {/* <Route
+          path="/songs/new"
+          render={(props) => {
+            return <CreateSongForm {...props} />;
+          }}
+        /> */}
 
         {/* Make sure you add the `exact` attribute here */}
-<Route path="/playlists/:playlistId(\d+)" render={(props) => {
-  // Pass the animalId to the AnimalDetailComponent
-  return <PlaylistDetail playlistId={parseInt(props.match.params.playlistId)}{...props}/>
-}} />
-
+        <Route
+          path="/playlists/:playlistId(\d+)"
+          render={(props) => {
+            // Pass the animalId to the AnimalDetailComponent
+            return (
+              <PlaylistDetail
+                playlistId={parseInt(props.match.params.playlistId)}
+                {...props}
+              />
+            );
+          }}
+        />
+        <Route
+          path="/songs/new"
+          render={(props) => {
+            return <CreateSongForm {...props} />;
+          }}
+        />
+        {/* <Route
+          path="/songs/:songId(\d+)"
+          render={(props) => {
+            // Pass the animalId to the AnimalDetailComponent
+            return (
+              <PlaylistDetail
+                songId={parseInt(props.match.params.songId)}
+                {...props}
+              />
+            );
+          }}
+        /> */}
       </React.Fragment>
     );
   }

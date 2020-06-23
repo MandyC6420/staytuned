@@ -7,11 +7,23 @@ export default {
   getAll() {
     return fetch(`${remoteURL}/playlists`).then(result => result.json())
   },
+  getSong() {
+    return fetch(`${remoteURL}/songs`).then(result => result.json())
+  },
   delete(id) {
     return fetch(`http://localhost:5002/songs/${id}`, {
         method: "DELETE"
     })
     .then(result => result.json())
-  }
+  },
+  post(newSong) {
+    return fetch(`${remoteURL}/songs`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newSong)
+    }).then(data => data.json())
+}
 }
 

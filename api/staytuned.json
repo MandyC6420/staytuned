@@ -15,7 +15,6 @@
       "password": 78910
     }
   ],
-
   "songs": [
     {
       "id": 1,
@@ -42,7 +41,6 @@
       "url": "https://www.youtube.com/watch?v=gMAHTZ2nBvk"
     }
   ],
-
   "playlists": [
     {
       "id": 1,
