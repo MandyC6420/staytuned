@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+// import './.css'
 
 class SongCard extends Component {
   render() {
@@ -8,17 +9,33 @@ class SongCard extends Component {
         <div className="card-content">
           <h3>
             Song name:{" "}
-            <span className="card-petname">{this.props.song.songTitle}</span>
-          <p><span className="card-petname">{this.props.song.url}</span></p> 
+            <span className="card-songname">{this.props.song.songTitle}</span>
+            <p>
+              <span className="card-url">{this.props.song.url}</span>
+            </p>
           </h3>
+        </div>
+        <button
+          type="button"
+          // disabled={this.state.loadingStatus}
+          onClick={() => {
+            this.props.deleteSongs(this.props.song.id);
+            this.props.history.push(`/playlists/${this.props.playlistId}`)
+          }}
+        >
+          Delete
+        </button>
+        <section className="section-content">
           <button
             type="button"
-            // disabled={this.state.loadingStatus}
-            onClick={this.props.song.deleteSongs}
+            className="btn"
+            onClick={() => {
+              this.props.history.push("/songs/new");
+            }}
           >
-            Delete
+            Create New Song
           </button>
-        </div>
+        </section>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
+import './PlaylistCard.css'
 class PlaylistCard extends Component {
   render() {
     return (
@@ -14,8 +14,16 @@ class PlaylistCard extends Component {
           </Link>
           <h3>
             Playlist name:{" "}
-            <span className="card-petname">
+            <span className="card-playlist-name">
               {this.props.playlists.playlistTitle}
+              {/* <button
+                type="button"
+                onClick={() =>
+                  this.props.deletesong(this.props.songs.id)
+                }
+              >
+               Delete Song
+              </button> */}
             </span>
           </h3>
           {/* <p></p> */}

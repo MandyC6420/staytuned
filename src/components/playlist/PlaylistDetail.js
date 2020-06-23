@@ -12,12 +12,21 @@ class PlaylistDetail extends Component {
   };
 
   deleteSongs = (id) => {
+    this.setState({ loadingStatus: true})
+    console.log("I'm in the delete function!");
     PlaylistManager.delete(id).then(() => {
-      PlaylistManager.getAll().then((newSongs) => {
+      PlaylistManager.get(this.props.playlistId).then((playlist) => {
         this.setState({
-          songs: newSongs,
+          name: playlist.playlistTitle,
+          songs: playlist.songs,
+          loadingStatus: false,
         });
       });
+      // PlaylistManager.getAll().then((newSongs) => {
+      //   this.setState({
+      //     songs: newSongs,
+      //    });
+      
     });
   };
 
@@ -34,6 +43,7 @@ class PlaylistDetail extends Component {
   }
 
   render() {
+    console.log("PlaylistList: Render");
     return (
       <div className="card">
         <div className="card-content">
@@ -48,14 +58,10 @@ class PlaylistDetail extends Component {
                 key={song.id}
                 song={song}
                 deleteSongs={this.deleteSongs}
+                {...this.props}
               />
             );
           })}
-          {/* <button
-            type="button"
-            disabled={this.state.loadingStatus}
-            onClick={this.handleDelete}
-          ></button> */}
         </div>
       </div>
     );
