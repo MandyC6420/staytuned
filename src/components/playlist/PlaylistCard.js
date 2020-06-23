@@ -18,7 +18,7 @@ class PlaylistCard extends Component {
               {this.props.playlists.playlistTitle}
             </span>
           </h3>
-          <p></p>
+          {/* <p></p> */}
         </div>
       </div>
     );

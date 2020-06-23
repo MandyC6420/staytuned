@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import PlaylistManager from "../../modules/PlaylistManager";
 import "./PlaylistDetail.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import SongCard from "./SongCard";
 
 class PlaylistDetail extends Component {
   state = {
     name: "",
     songs: [],
-    // breed: "",
     loadingStatus: true,
   };
 
@@ -30,7 +29,6 @@ class PlaylistDetail extends Component {
         name: playlist.playlistTitle,
         songs: playlist.songs,
         loadingStatus: false,
-        // breed: animal.breed,
       });
     });
   }
@@ -43,26 +41,21 @@ class PlaylistDetail extends Component {
             <img src={require("./dog.svg")} alt="My Dog" />
           </picture> */}
           <h3>Name:{this.state.name}</h3>
-          {/* <p>{song.songTitle}</p> */}
 
-          {/* <p>url: {this.state.playlists.url}</p> */}
           {this.state.songs.map((song) => {
-            return(
-            <SongCard
-              key={song.id}
-              song={song}
-              deleteSongs={this.deleteSongs}
-            />);
+            return (
+              <SongCard
+                key={song.id}
+                song={song}
+                deleteSongs={this.deleteSongs}
+              />
+            );
           })}
-          <button
+          {/* <button
             type="button"
             disabled={this.state.loadingStatus}
             onClick={this.handleDelete}
-          >
-           
-          </button>
-
-          {/* <p>Breed: {this.state.breed}</p> */}
+          ></button> */}
         </div>
       </div>
     );

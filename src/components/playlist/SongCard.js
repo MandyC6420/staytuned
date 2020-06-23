@@ -9,6 +9,7 @@ class SongCard extends Component {
           <h3>
             Song name:{" "}
             <span className="card-petname">{this.props.song.songTitle}</span>
+          <p><span className="card-petname">{this.props.song.url}</span></p> 
           </h3>
           <button
             type="button"
