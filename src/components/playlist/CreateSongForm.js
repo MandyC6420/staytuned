@@ -45,9 +45,9 @@ class CreateSongForm extends Component {
                 required
                 onChange={this.handleFieldChange}
                 id="songName"
-                placeholder="Song name"
+                placeholder="Song Title"
               />
-              <label htmlFor="songName">Name</label>
+              <label htmlFor="songTitle">Song Title</label>
               <input
                 type="text"
                 required
