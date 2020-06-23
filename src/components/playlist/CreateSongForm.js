@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PlaylistManager from "../../modules/PlaylistManager";
-// import './CreateSongForm.css'
+import './CreateSongForm.css'
 
 class CreateSongForm extends Component {
   state = {
@@ -20,12 +20,13 @@ class CreateSongForm extends Component {
   constructNewSong = (evt) => {
     evt.preventDefault();
     if (this.state.songName === "" || this.state.url === "") {
-      window.alert("Please input an song name and a url");
+      window.alert("Please input a song name and a url");
     } else {
       this.setState({ loadingStatus: true });
       const songs = {
-        name: this.state.songName,
+        name: this.state.songTitle,
         songs: this.state.songs,
+        url: this.state.url
       };
 
       // Create the animal and redirect user to animal list
@@ -54,7 +55,16 @@ class CreateSongForm extends Component {
                 id="url"
                 placeholder="URL"
               />
+              
+              <input
+                type="text"
+                required
+                onChange={this.handleFieldChange}
+                id="playlistId"
+                placeholder="Playlist"
+              />
               <label htmlFor="url">URL</label>
+              <label htmlFor="playlist">Playlist</label>
             </div>
             <div className="alignRight">
               <button

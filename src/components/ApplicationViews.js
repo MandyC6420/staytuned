@@ -24,15 +24,10 @@ class ApplicationViews extends Component {
             return <PlaylistList {...props} />;
           }}
         />
-        {/* <Route
-          path="/songs/new"
-          render={(props) => {
-            return <CreateSongForm {...props} />;
-          }}
-        /> */}
 
         {/* Make sure you add the `exact` attribute here */}
         <Route
+          exact
           path="/playlists/:playlistId(\d+)"
           render={(props) => {
             // Pass the animalId to the AnimalDetailComponent
@@ -50,7 +45,7 @@ class ApplicationViews extends Component {
             return <CreateSongForm {...props} />;
           }}
         />
-        {/* <Route
+        <Route
           path="/songs/:songId(\d+)"
           render={(props) => {
             // Pass the animalId to the AnimalDetailComponent
@@ -61,7 +56,7 @@ class ApplicationViews extends Component {
               />
             );
           }}
-        /> */}
+        />
       </React.Fragment>
     );
   }
