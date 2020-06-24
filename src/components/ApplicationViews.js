@@ -25,7 +25,7 @@ class ApplicationViews extends Component {
           }}
         />
 
-          <Route
+        <Route
           exact
           path="/playlists/:playlistId(\d+)"
           render={(props) => {
@@ -39,9 +39,14 @@ class ApplicationViews extends Component {
           }}
         />
         <Route
-          path="/songs/new"
+          path="/songs/new/:playlistId(\d+)"
           render={(props) => {
-            return <CreateSongForm {...props} />;
+            return (
+              <CreateSongForm
+                playlistId={parseInt(props.match.params.playlistId)}
+                {...props}
+              />
+            );
           }}
         />
         <Route

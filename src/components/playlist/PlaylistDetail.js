@@ -41,8 +41,6 @@ class PlaylistDetail extends Component {
     });
   }
 
-
-
   render() {
     console.log("PlaylistList: Render");
     return (
@@ -51,7 +49,7 @@ class PlaylistDetail extends Component {
           {/* <picture>
             <img src={require("./dog.svg")} alt="My Dog" />
           </picture> */}
-          
+
           <h3>Name:{this.state.name}</h3>
 
           {this.state.songs.map((song) => {
@@ -65,6 +63,15 @@ class PlaylistDetail extends Component {
             );
           })}
         </div>
+        <button
+          type="button"
+          className="btn"
+          onClick={() => {
+            this.props.history.push(`/songs/new/${this.props.playlistId}`);
+          }}
+        >
+          Create New Song
+        </button>
       </div>
     );
   }
