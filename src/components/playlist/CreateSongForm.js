@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PlaylistManager from "../../modules/PlaylistManager";
-// import './CreateSongForm.css'
+import './CreateSongForm.css'
+// import { Card } from 'semantic-ui-react'
 
 class CreateSongForm extends Component {
   state = {
@@ -20,15 +21,16 @@ class CreateSongForm extends Component {
   constructNewSong = (evt) => {
     evt.preventDefault();
     if (this.state.songName === "" || this.state.url === "") {
-      window.alert("Please input an song name and a url");
+      window.alert("Please input a song name and a url");
     } else {
       this.setState({ loadingStatus: true });
       const songs = {
-        name: this.state.songName,
+        name: this.state.songTitle,
         songs: this.state.songs,
+        url: this.state.url,
+        playlistId: this.state.playlistId
       };
 
-      // Create the animal and redirect user to animal list
       PlaylistManager.post(songs).then(() => this.props.history.push("/songs"));
     }
   };
@@ -44,9 +46,9 @@ class CreateSongForm extends Component {
                 required
                 onChange={this.handleFieldChange}
                 id="songName"
-                placeholder="Song name"
+                placeholder="Song Title"
               />
-              <label htmlFor="songName">Name</label>
+              <label htmlFor="songTitle">Song Title</label>
               <input
                 type="text"
                 required
@@ -54,7 +56,16 @@ class CreateSongForm extends Component {
                 id="url"
                 placeholder="URL"
               />
+              
+              <input
+                type="text"
+                required
+                onChange={this.handleFieldChange}
+                id="playlistId"
+                placeholder="Playlist"
+              />
               <label htmlFor="url">URL</label>
+              <label htmlFor="playlist">Playlist</label>
             </div>
             <div className="alignRight">
               <button
