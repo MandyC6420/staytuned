@@ -17,12 +17,6 @@
   ],
   "songs": [
     {
-      "id": 1,
-      "songTitle": "Use Me",
-      "playlistId": 1,
-      "url": "https://www.youtube.com/watch?v=EZldnP0lhHA"
-    },
-    {
       "id": 2,
       "songTitle": "Lovely Day",
       "playlistId": 1,
@@ -54,9 +48,15 @@
     },
     {
       "songTitle": "We are the Champions",
-      "url": "https://www.youtube.com/watch?v=04854XqcfCY",
+      "url": "https://www.youtube.com/watch?v=4hYCmPBlmwc",
       "playlistId": 1,
-      "id": 9
+      "id": 7
+    },
+    {
+      "songTitle": "Happy Birthday",
+      "url": "https://www.youtube.com/watch?v=4hYCmPBlmwc",
+      "playlistId": 1,
+      "id": 8
     }
   ],
   "playlists": [

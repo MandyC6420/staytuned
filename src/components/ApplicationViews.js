@@ -4,11 +4,17 @@ import Home from "./home/Home";
 import PlaylistList from "./playlist/PlaylistList";
 import PlaylistDetail from "./playlist/PlaylistDetail";
 import CreateSongForm from "./playlist/CreateSongForm";
+import Login from './auth/Login'
+import { Redirect } from 'react-router';
 
 class ApplicationViews extends Component {
+  isAuthenticated = () => localStorage.getItem("credentials") !== null
   render() {
     return (
       <React.Fragment>
+
+<Route path="/login" component={Login} />
+
         <Route
           exact
           path="/"
@@ -21,11 +27,15 @@ class ApplicationViews extends Component {
           exact
           path="/playlists"
           render={(props) => {
-            return <PlaylistList {...props} />;
-          }}
-        />
-
-        <Route
+            if (this.isAuthenticated()) {
+              return <PlaylistList {...props} />
+          } else {
+              return <Redirect to="/login" />
+          }
+      }}/>
+            
+   
+       <Route
           exact
           path="/playlists/:playlistId(\d+)"
           render={(props) => {

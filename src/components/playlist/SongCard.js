@@ -1,41 +1,44 @@
 import React, { Component } from "react";
-import { Card } from 'semantic-ui-react'
-
-
+import { Card, Button } from "semantic-ui-react";
 
 class SongCard extends Component {
   render() {
     return (
       <div className="card">
-        {/* <Card
-    href='#card-example-link-card'
-    header='Use Me'
-    meta='https://www.youtube.com/watch?v=EZldnP0lhHA'
-    description='By:  Bill Withers'
-    
-  /> */}
+        {/* put card info here       */}
+
+        <Card>
+          {/* <Image src='/images/avatar/large/matthew.png' wrapped ui={false} /> */}
+          <Card.Content>
+            <Card.Header>{this.props.song.songTitle}</Card.Header>
+            <Card.Description>
+              <span className="date">{this.props.song.url}</span>
+            </Card.Description>
+          </Card.Content>
+          <Button
+            id="Button"
+            type="button"
+            // disabled={this.state.loadingStatus}
+            onClick={() => {
+              this.props.deleteSongs(this.props.song.id);
+              this.props.history.push(`/playlists/${this.props.playlistId}`);
+            }}
+          >
+            
+            Delete
+          </Button>
+        </Card>
+
         <div className="card-content">
           <h3>
-            Song name:{" "}
-            <span className="card-songname">{this.props.song.songTitle}</span>
-            <p>
+            {/* Song name:{" "} */}
+            {/* <span className="card-songname">{this.props.song.songTitle}</span> */}
+            {/* <p>
               <span className="card-url">{this.props.song.url}</span>
-            </p>
+            </p> */}
           </h3>
         </div>
-        {/* <button
-          type="button"
-          // disabled={this.state.loadingStatus}
-          onClick={() => {
-            this.props.deleteSongs(this.props.song.id);
-            this.props.history.push(`/playlists/${this.props.playlistId}`)
-          }}
-        >
-          Delete
-        </button> */}
-        <section className="section-content">
-          
-        </section>
+        <section className="section-content"></section>
       </div>
     );
   }
