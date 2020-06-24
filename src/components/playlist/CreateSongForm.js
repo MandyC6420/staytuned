@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import PlaylistManager from "../../modules/PlaylistManager";
-import './CreateSongForm.css'
+import "./CreateSongForm.css";
 // import { Card } from 'semantic-ui-react'
 
 class CreateSongForm extends Component {
   state = {
     songName: "",
     url: "",
+    playlistId: Number,
     loadingStatus: false,
   };
 
@@ -25,13 +26,15 @@ class CreateSongForm extends Component {
     } else {
       this.setState({ loadingStatus: true });
       const songs = {
-        name: this.state.songTitle,
+        songTitle: this.state.songName,
         songs: this.state.songs,
         url: this.state.url,
-        playlistId: this.state.playlistId
+        playlistId: this.props.playlistId,
       };
 
-      PlaylistManager.post(songs).then(() => this.props.history.push("/songs"));
+      PlaylistManager.post(songs).then(() =>
+        this.props.history.push(`/playlists/${this.props.playlistId}`)
+      );
     }
   };
 
@@ -56,16 +59,14 @@ class CreateSongForm extends Component {
                 id="url"
                 placeholder="URL"
               />
-              
-              <input
-                type="text"
+
+              {/* <input
+                type="number"
                 required
                 onChange={this.handleFieldChange}
                 id="playlistId"
-                placeholder="Playlist"
-              />
+              /> */}
               <label htmlFor="url">URL</label>
-              <label htmlFor="playlist">Playlist</label>
             </div>
             <div className="alignRight">
               <button
