@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PlaylistManager from "../../modules/PlaylistManager";
 import './CreateSongForm.css'
+// import { Card } from 'semantic-ui-react'
 
 class CreateSongForm extends Component {
   state = {
@@ -26,10 +27,10 @@ class CreateSongForm extends Component {
       const songs = {
         name: this.state.songTitle,
         songs: this.state.songs,
-        url: this.state.url
+        url: this.state.url,
+        playlistId: this.state.playlistId
       };
 
-      // Create the animal and redirect user to animal list
       PlaylistManager.post(songs).then(() => this.props.history.push("/songs"));
     }
   };

@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import './PlaylistCard.css'
+
+
+
 class PlaylistCard extends Component {
   render() {
     return (
       <div className="card">
         <div className="card-content">
+        
           {/* <picture>
             <img src={require('./dog.svg')} alt="My Dog" />
           </picture> */}

@@ -3,7 +3,7 @@ import PlaylistManager from "../../modules/PlaylistManager";
 import "./PlaylistDetail.css";
 // import { Link } from "react-router-dom";
 import SongCard from "./SongCard";
-
+// import { Card } from "semantic-ui-react";
 class PlaylistDetail extends Component {
   state = {
     name: "",
@@ -12,7 +12,7 @@ class PlaylistDetail extends Component {
   };
 
   deleteSongs = (id) => {
-    this.setState({ loadingStatus: true})
+    this.setState({ loadingStatus: true });
     console.log("I'm in the delete function!");
     PlaylistManager.delete(id).then(() => {
       PlaylistManager.get(this.props.playlistId).then((playlist) => {
@@ -26,7 +26,6 @@ class PlaylistDetail extends Component {
       //   this.setState({
       //     songs: newSongs,
       //    });
-      
     });
   };
 
@@ -42,6 +41,8 @@ class PlaylistDetail extends Component {
     });
   }
 
+
+
   render() {
     console.log("PlaylistList: Render");
     return (
@@ -50,6 +51,7 @@ class PlaylistDetail extends Component {
           {/* <picture>
             <img src={require("./dog.svg")} alt="My Dog" />
           </picture> */}
+          
           <h3>Name:{this.state.name}</h3>
 
           {this.state.songs.map((song) => {

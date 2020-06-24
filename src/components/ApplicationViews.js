@@ -2,9 +2,9 @@ import { Route } from "react-router-dom";
 import React, { Component } from "react";
 import Home from "./home/Home";
 import PlaylistList from "./playlist/PlaylistList";
-// import PlaylistCard from "./playlist/PlaylistCard";
 import PlaylistDetail from "./playlist/PlaylistDetail";
 import CreateSongForm from "./playlist/CreateSongForm";
+
 class ApplicationViews extends Component {
   render() {
     return (
@@ -25,8 +25,7 @@ class ApplicationViews extends Component {
           }}
         />
 
-        {/* Make sure you add the `exact` attribute here */}
-        <Route
+          <Route
           exact
           path="/playlists/:playlistId(\d+)"
           render={(props) => {
