@@ -31,18 +31,22 @@ class PlaylistList extends Component {
   };
 
   render() {
-    console.log("PlaylistList: Render");
+    console.log(this.state.playlists);
 
     return (
       <div className="container-cards">
-        {this.state.playlists.map((playlist) => (
+        {this.state.playlists.map((playlist) =>
+        if(playlist.userid==localStorage.getItem("credentials"))
           <PlaylistCard
             key={playlist.userid}
             playlists={playlist}
             deletePlaylist={this.deletePlaylist}
             {...this.props}
+
+            
           />
-        ))}
+          
+        )}
       </div>
     );
   }
