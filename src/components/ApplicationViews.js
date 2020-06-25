@@ -4,16 +4,16 @@ import Home from "./home/Home";
 import PlaylistList from "./playlist/PlaylistList";
 import PlaylistDetail from "./playlist/PlaylistDetail";
 import CreateSongForm from "./playlist/CreateSongForm";
-import Login from './auth/Login'
-import { Redirect } from 'react-router';
+import Login from "./auth/Login";
+import { Redirect } from "react-router";
+import PlaylistEditForm from "./playlist/PlaylistEditForm";
 
 class ApplicationViews extends Component {
-  isAuthenticated = () => localStorage.getItem("credentials") !== null
+  isAuthenticated = () => localStorage.getItem("credentials") !== null;
   render() {
     return (
       <React.Fragment>
-
-<Route path="/login" component={Login} />
+        <Route path="/login" component={Login} />
 
         <Route
           exact
@@ -24,18 +24,25 @@ class ApplicationViews extends Component {
         />
 
         <Route
+          path="/playlists/:playlistId(\d+)/edit"
+          render={(props) => {
+            return <PlaylistEditForm {...props} />;
+          }}
+        />
+
+        <Route
           exact
           path="/playlists"
           render={(props) => {
             if (this.isAuthenticated()) {
-              return <PlaylistList {...props} />
-          } else {
-              return <Redirect to="/login" />
-          }
-      }}/>
-            
-   
-       <Route
+              return <PlaylistList {...props} />;
+            } else {
+              return <Redirect to="/login" />;
+            }
+          }}
+        />
+
+        <Route
           exact
           path="/playlists/:playlistId(\d+)"
           render={(props) => {

@@ -37,9 +37,10 @@ class PlaylistList extends Component {
       <div className="container-cards">
         {this.state.playlists.map((playlist) => (
           <PlaylistCard
-            key={playlist.id}
+            key={playlist.userid}
             playlists={playlist}
             deletePlaylist={this.deletePlaylist}
+            {...this.props}
           />
         ))}
       </div>

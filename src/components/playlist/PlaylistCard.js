@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import './PlaylistCard.css'
-
-
+import "./PlaylistCard.css";
+// import CardExampleLinkCard from "./../playlist/PlaylistCardCard"
 
 class PlaylistCard extends Component {
   render() {
     return (
       <div className="card">
         <div className="card-content">
-        
           {/* <picture>
             <img src={require('./dog.svg')} alt="My Dog" />
           </picture> */}
@@ -28,6 +26,16 @@ class PlaylistCard extends Component {
               >
                Delete Song
               </button> */}
+              <button
+                type="button"
+                onClick={() => {
+                  this.props.history.push(
+                    `/playlists/${this.props.playlists.userId}/edit`
+                  );
+                }}
+              >
+                Edit
+              </button>
             </span>
           </h3>
           {/* <p></p> */}
