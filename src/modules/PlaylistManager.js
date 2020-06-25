@@ -24,6 +24,15 @@ export default {
         },
         body: JSON.stringify(newSong)
     }).then(data => data.json())
+},
+update(editedPlaylist) {
+  return fetch(`${remoteURL}/playlists/${editedPlaylist.playlistTitle}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(editedPlaylist)
+  }).then(data => data.json());
 }
 }
 
