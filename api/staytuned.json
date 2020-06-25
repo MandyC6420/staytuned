@@ -35,6 +35,12 @@
       "url": "https://www.youtube.com/watch?v=gMAHTZ2nBvk"
     },
     {
+      "id": 1,
+      "songTitle": "Use Me",
+      "playlistId": 1,
+      "url": "https://www.youtube.com/watch?v=EZldnP0lhHA"
+    },
+    {
       "songTitle": "Could've Been",
       "id": 5,
       "playlistId": 2,
@@ -45,18 +51,6 @@
       "songTitle": "Come Down",
       "playlistId": 1,
       "url": "https://www.youtube.com/watch?v=-OqrcUvrbRY"
-    },
-    {
-      "songTitle": "We are the Champions",
-      "url": "https://www.youtube.com/watch?v=4hYCmPBlmwc",
-      "playlistId": 1,
-      "id": 7
-    },
-    {
-      "songTitle": "Happy Birthday",
-      "url": "https://www.youtube.com/watch?v=4hYCmPBlmwc",
-      "playlistId": 1,
-      "id": 8
     }
   ],
   "playlists": [
