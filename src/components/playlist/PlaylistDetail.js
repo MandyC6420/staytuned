@@ -4,13 +4,15 @@ import "./PlaylistDetail.css";
 // import { Link } from "react-router-dom";
 import SongCard from "./SongCard";
 // import { Card } from "semantic-ui-react";
+
+//sets state??
 class PlaylistDetail extends Component {
   state = {
     name: "",
     songs: [],
     loadingStatus: true,
   };
-
+//tells playlist manaer how to delete a song?
   deleteSongs = (id) => {
     this.setState({ loadingStatus: true });
     console.log("I'm in the delete function!");
@@ -28,10 +30,10 @@ class PlaylistDetail extends Component {
       //    });
     });
   };
-
+//I'm not sure what this does, 
   componentDidMount() {
     console.log("PlaylistDetail: ComponentDidMount");
-    //get(id) from AnimalManager and hang on to the data; put it into state
+    //gets playlist id from manager?
     PlaylistManager.get(this.props.playlistId).then((playlist) => {
       this.setState({
         name: playlist.playlistTitle,
@@ -40,7 +42,7 @@ class PlaylistDetail extends Component {
       });
     });
   }
-
+//renders song card?
   render() {
     console.log("PlaylistList: Render");
     return (
@@ -49,7 +51,7 @@ class PlaylistDetail extends Component {
           {/* <picture>
             <img src={require("./dog.svg")} alt="My Dog" />
           </picture> */}
-
+{/* //puts song in state? */}
           <h3>Name:{this.state.name}</h3>
 
           {this.state.songs.map((song) => {
@@ -63,6 +65,7 @@ class PlaylistDetail extends Component {
             );
           })}
         </div>
+        {/* does this refresh back to the playlist with the new song */}
         <button
           type="button"
           className="btn"

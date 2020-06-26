@@ -4,14 +4,15 @@ import PlaylistManager from "../../modules/PlaylistManager";
 import "./../playlist/PlaylistCard";
 
 class PlaylistList extends Component {
-  //define what this component needs to render
+  //I don't know
   state = {
     playlists: [],
   };
-
+// not sure, but gets playlists from PlaylistManager
   componentDidMount() {
     console.log("PLAYLIST LIST: ComponentDidMount");
     //getAll from AnimalManager and hang on to that data; put it in state
+    console.log(localStorage.getItem("credentials"))
     PlaylistManager.getAll().then((playlists) => {
       this.setState({
         playlists: playlists,
@@ -19,7 +20,7 @@ class PlaylistList extends Component {
       console.log(playlists);
     });
   }
-
+//deletes individual song by it's id?
   deleteSong = (id) => {
     PlaylistManager.delete(id).then(() => {
       PlaylistManager.getAll().then((newSongs) => {
@@ -35,8 +36,9 @@ class PlaylistList extends Component {
 
     return (
       <div className="container-cards">
+        {/* sets playlists into state */}
         {this.state.playlists.map((playlist) =>
-        if(playlist.userid==localStorage.getItem("credentials"))
+        // playlist card ??
           <PlaylistCard
             key={playlist.userid}
             playlists={playlist}

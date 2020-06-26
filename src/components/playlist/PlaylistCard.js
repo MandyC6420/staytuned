@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./PlaylistCard.css";
 // import CardExampleLinkCard from "./../playlist/PlaylistCardCard"
-
+//creates playlistcard, it links playlists to details
 class PlaylistCard extends Component {
   render() {
     return (
@@ -26,6 +26,7 @@ class PlaylistCard extends Component {
               >
                Delete Song
               </button> */}
+              {/* not sure */}
               <button
                 type="button"
                 onClick={() => {
