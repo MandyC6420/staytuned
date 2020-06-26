@@ -5,6 +5,7 @@ class PlaylistEditForm extends Component {
   //set the initial state
   state = {
     playlistTitle: "",
+    userId: "",
     loadingStatus: true,
   };
 
@@ -17,23 +18,23 @@ class PlaylistEditForm extends Component {
   updateExistingPlaylist = (evt) => {
     evt.preventDefault();
     this.setState({ loadingStatus: true });
-    const editedplaylistTitle = {
-      id: this.props.match.params.userId,
-      name: this.state.playlistTitle,
-      
+    const editedplaylist = {
+      id: this.props.match.params.playlistId,
+      playlistTitle: this.state.playlistTitle,
+      userId: this.state.userId
     };
 
-    PlaylistManager.update(editedplaylistTitle).then(() =>
+    PlaylistManager.update(editedplaylist).then(() =>
       this.props.history.push("/playlists")
     );
   };
 // populates the input fields with the current values from the API
   componentDidMount() {
-    PlaylistManager.get(this.props.match.params.playlistTitle).then(
-      (playlists) => {
+    PlaylistManager.get(this.props.match.params.playlistId).then(
+      playlists => {
         this.setState({
           playlistTitle: playlists.playlistTitle,
-          
+          userId: playlists.userId,
           loadingStatus: false,
         });
       }
@@ -60,7 +61,7 @@ class PlaylistEditForm extends Component {
               <button
                 type="button"
                 disabled={this.state.loadingStatus}
-                onClick={this.updateExistingPlaylistTitle}
+                onClick={this.updateExistingPlaylist}
                 className="btn btn-primary"
               >
                 Submit
