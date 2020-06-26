@@ -31,7 +31,7 @@ class PlaylistCard extends Component {
                 type="button"
                 onClick={() => {
                   this.props.history.push(
-                    `/playlists/${this.props.playlists.userId}/edit`
+                    `/playlists/${this.props.playlists.id}/edit`
                   );
                 }}
               >

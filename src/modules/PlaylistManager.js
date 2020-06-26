@@ -52,7 +52,7 @@ export default {
   },
   // should bring back edited playlist after a delete?
   update(editedPlaylist) {
-    return fetch(`${remoteURL}/playlists/${editedPlaylist.playlistTitle}`, {
+    return fetch(`${remoteURL}/playlists/${editedPlaylist.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
