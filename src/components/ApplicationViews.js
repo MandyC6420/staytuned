@@ -8,13 +8,14 @@ import Login from "./auth/Login";
 import { Redirect } from "react-router";
 import PlaylistEditForm from "./playlist/PlaylistEditForm";
 
+// logs in user?????I don't know what else
 class ApplicationViews extends Component {
   isAuthenticated = () => localStorage.getItem("credentials") !== null;
   render() {
     return (
       <React.Fragment>
         <Route path="/login" component={Login} />
-
+{/* routes user home */}
         <Route
           exact
           path="/"
@@ -22,14 +23,14 @@ class ApplicationViews extends Component {
             return <Home />;
           }}
         />
-
+{/* gets playlist id for the playlist edit form? */}
         <Route
           path="/playlists/:playlistId(\d+)/edit"
           render={(props) => {
             return <PlaylistEditForm {...props} />;
           }}
         />
-
+{/* this is the authentication feature, redirects user to login when playlist is */}
         <Route
           exact
           path="/playlists"
@@ -46,7 +47,7 @@ class ApplicationViews extends Component {
           exact
           path="/playlists/:playlistId(\d+)"
           render={(props) => {
-            // Pass the animalId to the AnimalDetailComponent
+            // Pass the playlistId to the ??playlist detail
             return (
               <PlaylistDetail
                 playlistId={parseInt(props.match.params.playlistId)}
@@ -69,7 +70,7 @@ class ApplicationViews extends Component {
         <Route
           path="/songs/:songId(\d+)"
           render={(props) => {
-            // Pass the animalId to the AnimalDetailComponent
+            // not sure what this does
             return (
               <PlaylistDetail
                 songId={parseInt(props.match.params.songId)}

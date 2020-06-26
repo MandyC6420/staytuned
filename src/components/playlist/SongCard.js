@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Card, Button } from "semantic-ui-react";
-
+//creates the song card
 class SongCard extends Component {
   render() {
     return (
@@ -10,7 +10,9 @@ class SongCard extends Component {
         <Card>
           {/* <Image src='/images/avatar/large/matthew.png' wrapped ui={false} /> */}
           <Card.Content>
+            {/* pulls song title from json */}
             <Card.Header>{this.props.song.songTitle}</Card.Header>
+            {/* pulls url from json */}
             <Card.Description>
               <span className="date">{this.props.song.url}</span>
             </Card.Description>
@@ -19,6 +21,7 @@ class SongCard extends Component {
             id="Button"
             type="button"
             // disabled={this.state.loadingStatus}
+            //deletes songs from playlist and brings back the rest of the playlist
             onClick={() => {
               this.props.deleteSongs(this.props.song.id);
               this.props.history.push(`/playlists/${this.props.playlistId}`);

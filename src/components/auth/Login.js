@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import PlaylistManager from "../../modules/PlaylistManager"
 
 class Login extends Component {
 
@@ -14,24 +15,40 @@ class Login extends Component {
     stateToChange[evt.target.id] = evt.target.value
     this.setState(stateToChange)
   }
-
+// I have no idea
   handleLogin = (e) => {
     e.preventDefault()
-    /*
-        For now, just store the email and password that
-        the customer enters into local storage.
-    */
-    localStorage.setItem(
-        "credentials",
-        JSON.stringify({
-            email: this.state.email,
-            password: this.state.password
-        })
-    )
+  //  calls PlaylistManager to get user by email, password, and id
+    PlaylistManager.getByEmail(this.state.email)
+    .then((users) => {
+      console.log(users)
+      if(users[0] === undefined ) {
+        window.alert("User not found!")
+        console.log(users[0])
+      }
+      else{
+        localStorage.setItem("userId", users[0].id)
+        localStorage.setItem(
+          "credentials",
+          JSON.stringify({
+              email: this.state.email,
+              password: this.state.password,
+              // id:users[0].id
+          })
+      )
+
+    // localStorage.setItem(
+    //     "credentials",
+    //     JSON.stringify({
+    //         email: this.state.email,
+    //         password: this.state.password
+    //     })
+    // )
+    // I don't know
     this.props.history.push("/playlists");
 
-  }
-
+  }})}
+// renders login form
   render() {
     return (
       <form onSubmit={this.handleLogin}>
@@ -56,8 +73,8 @@ class Login extends Component {
         </fieldset>
       </form>
     )
-  }
+  }}
 
-}
+
 
 export default Login

@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import PlaylistManager from "../../modules/PlaylistManager";
 import "./CreateSongForm.css";
 // import { Card } from 'semantic-ui-react'
-
+//sets state, sets playlist equal to the new data?
+// Remember! State is the current values of the properties used to render a component
 class CreateSongForm extends Component {
   state = {
     songName: "",
@@ -10,15 +11,14 @@ class CreateSongForm extends Component {
     playlistId: Number,
     loadingStatus: false,
   };
-
+// ??
   handleFieldChange = (evt) => {
     const stateToChange = {};
     stateToChange[evt.target.id] = evt.target.value;
     this.setState(stateToChange);
   };
 
-  /*  Local method for validation, set loadingStatus, create animal      object, invoke the AnimalManager post method, and redirect to the full animal list
-   */
+  // it is the create new song ???
   constructNewSong = (evt) => {
     evt.preventDefault();
     if (this.state.songName === "" || this.state.url === "") {
@@ -37,7 +37,7 @@ class CreateSongForm extends Component {
       );
     }
   };
-
+// creates edit song form
   render() {
     return (
       <>
