@@ -8,9 +8,9 @@ class PlaylistCard extends Component {
     return (
       <div className="card">
         <div className="card-content">
-          {/* <picture>
-            <img src={require('./dog.svg')} alt="My Dog" />
-          </picture> */}
+          {/* <picture> */}
+            {/* <img src={require('staytunedlogoa1.jpg')} alt="error" /> */}
+          {/* </picture> */}
           <Link to={`/playlists/${this.props.playlists.id}`}>
             <button>Details</button>
           </Link>

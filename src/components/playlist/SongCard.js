@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Card, Button } from "semantic-ui-react";
+import "./SongCard.css";
 //creates the song card
 class SongCard extends Component {
   render() {
