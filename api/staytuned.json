@@ -20,48 +20,85 @@
       "id": 2,
       "songTitle": "Lovely Day",
       "playlistId": 1,
+      "artist": "Bill Withers",
       "url": "https://www.youtube.com/watch?v=oaLDut30Br0"
     },
     {
       "id": 3,
       "songTitle": "Get You",
       "playlistId": 2,
+      "artist": "Daniel Caesar",
       "url": "https://www.youtube.com/watch?v=uQFVqltOXRg"
     },
     {
       "id": 4,
       "songTitle": "Lifetime",
       "playlistId": 2,
+      "artist": "Maxwell",
       "url": "https://www.youtube.com/watch?v=gMAHTZ2nBvk"
     },
     {
       "id": 1,
       "songTitle": "Use Me",
-      "playlistId": 1,
+      "playlistId": 2,
+      "artist": "Bill Withers",
       "url": "https://www.youtube.com/watch?v=EZldnP0lhHA"
     },
     {
       "songTitle": "Could've Been",
       "id": 5,
       "playlistId": 2,
+      "artist": "H.E.R. ft.  Bryson Tiller",
       "url": "https://www.youtube.com/watch?v=4hYCmPBlmwc"
     },
     {
       "id": 6,
       "songTitle": "Come Down",
-      "playlistId": 1,
+      "playlistId": 4,
+      "artist": "Anderson Paak",
       "url": "https://www.youtube.com/watch?v=-OqrcUvrbRY"
+    },
+    {
+      "songTitle": "Punky Reggae Party",
+      "url": "https://www.youtube.com/watch?v=DvsaNOeCVHw",
+      "playlistId": 4,
+      "artist": "Bob Marley",
+      "id": 7
+    },
+    {
+      "songTitle": "A Sunday Kind of Love",
+      "url": "https://www.youtube.com/watch?v=bQCdnv44cyo",
+      "playlistId": 2,
+      "artist": "Etta James",
+      "id": 8
+    },
+    {
+      "songTitle": "All I could do was cry",
+      "url": "https://www.youtube.com/watch?v=3Pc9BmXN998",
+      "playlistId": 3,
+      "artist": "Etta James",
+      "id": 9
     }
   ],
   "playlists": [
     {
       "id": 1,
-      "userId": 1,
-      "playlistTitle": "Uplifting Songs"
+      "playlistTitle": "Uplifting Songs & more!!",
+      "userId": 1
     },
     {
       "id": 2,
-      "playlistTitle": "Love Songs!!",
+      "playlistTitle": "Love Songs!",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "playlistTitle": "Tear Jerkers",
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "playlistTitle": "Get Hype!",
       "userId": 2
     }
   ]

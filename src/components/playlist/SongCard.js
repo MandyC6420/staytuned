@@ -16,6 +16,10 @@ class SongCard extends Component {
             <Card.Description>
               <span className="date">{this.props.song.url}</span>
             </Card.Description>
+
+            <Card.Description>
+            <span className="date">{this.props.song.artist}</span>
+            </Card.Description>
           </Card.Content>
           <Button
             id="Button"
@@ -25,6 +29,7 @@ class SongCard extends Component {
             onClick={() => {
               this.props.deleteSongs(this.props.song.id);
               this.props.history.push(`/playlists/${this.props.playlistId}`);
+              // this.props.artist(this.props.artist)
             }}
           >
             

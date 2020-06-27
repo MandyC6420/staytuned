@@ -4,9 +4,10 @@ import PlaylistManager from "../../modules/PlaylistManager";
 import "./../playlist/PlaylistCard";
 
 class PlaylistList extends Component {
-  //I don't know
+  // sets state
   state = {
     playlists: [],
+    artist: "",
   };
 // not sure, but gets playlists from PlaylistManager
   componentDidMount() {
@@ -16,6 +17,7 @@ class PlaylistList extends Component {
     PlaylistManager.getAll().then((playlists) => {
       this.setState({
         playlists: playlists,
+        artist: ""
       });
       console.log(playlists);
     });
