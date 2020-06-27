@@ -1,7 +1,7 @@
 
 
 div.card {
-  background-color:purple;
+  background-color: darkorchid;
 }
 
 .card-content h3 {
@@ -18,30 +18,30 @@ div.card {
 }
 
 .card-playlist-name {
-  color: blueviolet;
+  color:aqua;
 }
 
 .card button {
-  background-color: darkcyan;
+  background-color: darkslateblue;
   border: none;
-  color: paleturquoise;
+  color:aqua;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  padding: 0.5em;
+  padding: .25em;
   border-radius: 2px;
   margin: 0.3em;
   width: 17%;
 }
 
 .card button:hover {
-  background-color:darkorchid;
+  background-color: darkgray;
 }
 
 .container-cards {
   width: 26em;
-background-color: darkorchid;
+background-color: aqua;
 margin: 2em;
 padding: 0.5em;
 

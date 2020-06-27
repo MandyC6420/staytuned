@@ -18,7 +18,7 @@ class ApplicationViews extends Component {
 {/* routes user home */}
         <Route
           exact
-          path="/home"
+          path="/"
           render={(props) => {
             return <Home />;
           }}
