@@ -17,7 +17,7 @@ class PlaylistList extends Component {
     PlaylistManager.getAll().then((playlists) => {
       this.setState({
         playlists: playlists,
-        artist: ""
+        artist: playlists.artist
       });
       console.log(playlists);
     });

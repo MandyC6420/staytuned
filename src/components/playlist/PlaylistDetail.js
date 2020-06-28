@@ -38,6 +38,7 @@ class PlaylistDetail extends Component {
       this.setState({
         name: playlist.playlistTitle,
         songs: playlist.songs,
+        artist: playlist.artist,
         loadingStatus: false,
       });
     });

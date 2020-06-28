@@ -13,9 +13,10 @@
   margin: 1em;
 }
 .card {
-  width: 22em;
-  margin: 1em;
+  width: 20em;
+  margin: auto;
   padding: 0.5em;
+  
   /* background-color: purple; */
 }
 

@@ -22,21 +22,21 @@ div.card {
 }
 
 .card button {
-  background-color: darkslateblue;
+  background-color: darkcyan;
   border: none;
   color:aqua;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  padding: .25em;
+  padding: 0.5em;
   border-radius: 2px;
   margin: 0.3em;
-  width: 17%;
+  width: 20%;
 }
 
 .card button:hover {
-  background-color: darkgray;
+  background-color:darkorchid;
 }
 
 .container-cards {

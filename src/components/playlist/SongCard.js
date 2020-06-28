@@ -5,7 +5,7 @@ import "./SongCard.css";
 class SongCard extends Component {
   render() {
     return (
-      <div className="card">
+      <div className="card" id="card">
         {/* put card info here       */}
 
         <Card>
@@ -21,9 +21,9 @@ class SongCard extends Component {
             <Card.Description>
             <span className="date">{this.props.song.artist}</span>
             </Card.Description>
-          </Card.Content>
+          {/* </Card.Content> */}
           <Button
-            id="Button"
+            id="Button1"
             type="button"
             // disabled={this.state.loadingStatus}
             //deletes songs from playlist and brings back the rest of the playlist
@@ -36,7 +36,8 @@ class SongCard extends Component {
             
             Delete
           </Button>
-        </Card>
+          </Card.Content>
+        </Card> 
 
         <div className="card-content">
           <h3>
@@ -48,6 +49,7 @@ class SongCard extends Component {
           </h3>
         </div>
         <section className="section-content"></section>
+        
       </div>
     );
   }
