@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { Card, Button } from "semantic-ui-react";
+import "./SongCard.css";
 //creates the song card
 class SongCard extends Component {
   render() {
     return (
-      <div className="card">
+      <div className="card" id="card">
         {/* put card info here       */}
 
         <Card>
@@ -16,21 +17,27 @@ class SongCard extends Component {
             <Card.Description>
               <span className="date">{this.props.song.url}</span>
             </Card.Description>
-          </Card.Content>
+
+            <Card.Description>
+            <span className="date">{this.props.song.artist}</span>
+            </Card.Description>
+          {/* </Card.Content> */}
           <Button
-            id="Button"
+            id="Button1"
             type="button"
             // disabled={this.state.loadingStatus}
             //deletes songs from playlist and brings back the rest of the playlist
             onClick={() => {
               this.props.deleteSongs(this.props.song.id);
               this.props.history.push(`/playlists/${this.props.playlistId}`);
+              // this.props.artist(this.props.artist)
             }}
           >
             
             Delete
           </Button>
-        </Card>
+          </Card.Content>
+        </Card> 
 
         <div className="card-content">
           <h3>
@@ -42,6 +49,7 @@ class SongCard extends Component {
           </h3>
         </div>
         <section className="section-content"></section>
+        
       </div>
     );
   }

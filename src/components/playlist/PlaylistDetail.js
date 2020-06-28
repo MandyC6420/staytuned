@@ -38,6 +38,7 @@ class PlaylistDetail extends Component {
       this.setState({
         name: playlist.playlistTitle,
         songs: playlist.songs,
+        artist: playlist.artist,
         loadingStatus: false,
       });
     });
@@ -52,6 +53,15 @@ class PlaylistDetail extends Component {
             <img src={require("./dog.svg")} alt="My Dog" />
           </picture> */}
 {/* //puts song in state? */}
+<button
+          type="button"
+          className="btn"
+          onClick={() => {
+            this.props.history.push(`/songs/new/${this.props.playlistId}`);
+          }}
+        >
+          Create New Song
+        </button>
           <h3>Name:{this.state.name}</h3>
 
           {this.state.songs.map((song) => {
@@ -66,15 +76,7 @@ class PlaylistDetail extends Component {
           })}
         </div>
         {/* does this refresh back to the playlist with the new song */}
-        <button
-          type="button"
-          className="btn"
-          onClick={() => {
-            this.props.history.push(`/songs/new/${this.props.playlistId}`);
-          }}
-        >
-          Create New Song
-        </button>
+        
       </div>
     );
   }

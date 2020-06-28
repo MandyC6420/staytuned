@@ -1,0 +1,22 @@
+.card h3 {
+  color:turquoise;
+  margin: 1em;
+}
+.header {
+  margin-top: 0;
+  margin-bottom: 1em;
+  width: 15em;
+  font-weight: bold;
+}
+
+.description {
+  margin: 1em;
+}
+.card {
+  width: 20em;
+  margin: auto;
+  padding: 0.5em;
+  
+  /* background-color: purple; */
+}
+

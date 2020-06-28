@@ -1,8 +1,8 @@
 const remoteURL = "http://localhost:5002";
 
 // /posts?id=1&id=2
-
 // email=${email}
+
 // getByEmail is fetching the users email
 export default {
   getByEmail(email) {

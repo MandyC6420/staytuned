@@ -8,10 +8,11 @@ class CreateSongForm extends Component {
   state = {
     songName: "",
     url: "",
+    artist: "",
     playlistId: Number,
-    loadingStatus: false,
+    loadingStatus: false
   };
-// ??
+  // ??
   handleFieldChange = (evt) => {
     const stateToChange = {};
     stateToChange[evt.target.id] = evt.target.value;
@@ -30,6 +31,7 @@ class CreateSongForm extends Component {
         songs: this.state.songs,
         url: this.state.url,
         playlistId: this.props.playlistId,
+        artist: this.state.artist,
       };
 
       PlaylistManager.post(songs).then(() =>
@@ -37,7 +39,7 @@ class CreateSongForm extends Component {
       );
     }
   };
-// creates edit song form
+  // creates edit song form
   render() {
     return (
       <>
@@ -59,14 +61,15 @@ class CreateSongForm extends Component {
                 id="url"
                 placeholder="URL"
               />
-
-              {/* <input
-                type="number"
+              <label htmlFor="url">URL</label>
+              <label htmlFor="artistName">Artist Name</label>
+              <input
+                type="text"
                 required
                 onChange={this.handleFieldChange}
-                id="playlistId"
-              /> */}
-              <label htmlFor="url">URL</label>
+                id="Artist"
+                placeholder="Artist"
+              />
             </div>
             <div className="alignRight">
               <button
