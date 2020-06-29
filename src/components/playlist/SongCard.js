@@ -33,9 +33,9 @@ class SongCard extends Component {
               // this.props.artist(this.props.artist)
             }}
           >
-            
-            Delete
-          </Button>
+            {/* <Button fluid>Delete</Button> */}
+             Delete 
+          </Button> 
           </Card.Content>
         </Card> 
 
