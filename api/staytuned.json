@@ -13,6 +13,13 @@
       "lastName": "Houston",
       "email": "MaryHouston@email.com",
       "password": 78910
+    },
+    {
+      "firstName": "",
+      "lastName": "Congleton",
+      "email": "mmee@email.com",
+      "password": "123",
+      "id": 3
     }
   ],
   "songs": [
@@ -78,6 +85,34 @@
       "playlistId": 3,
       "artist": "Etta James",
       "id": 9
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "Mandy@email.com",
+      "password": "pleasework",
+      "id": 10
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "Mandy@email.com",
+      "password": "1234567",
+      "id": 11
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "Mandy@email.com",
+      "password": "12345",
+      "id": 12
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "Mandy@email.com",
+      "password": "12345",
+      "id": 13
     }
   ],
   "playlists": [

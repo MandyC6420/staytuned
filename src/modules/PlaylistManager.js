@@ -56,8 +56,19 @@ export default {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
+        
       },
       body: JSON.stringify(editedPlaylist),
     }).then((data) => data.json());
   },
+      add(User) {
+        return fetch(`${remoteURL}/users`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(User)
+        }).then(data => data.json())
+    },
+  
 };

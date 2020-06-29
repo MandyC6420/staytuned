@@ -7,6 +7,7 @@ import CreateSongForm from "./playlist/CreateSongForm";
 import Login from "./auth/Login";
 import { Redirect } from "react-router";
 import PlaylistEditForm from "./playlist/PlaylistEditForm";
+import RegisterForm from "./auth/RegisterForm";
 
 // logs in user?????I don't know what else
 class ApplicationViews extends Component {
@@ -15,22 +16,23 @@ class ApplicationViews extends Component {
     return (
       <React.Fragment>
         <Route path="/login" component={Login} />
-{/* routes user home */}
+        {/* routes user home */}
         <Route
           exact
-          path="/"
+          path="/home"
           render={(props) => {
-            return <Home />;
+            return <Home {...props}/>;
+         
           }}
         />
-{/* gets playlist id for the playlist edit form? */}
+        {/* gets playlist id for the playlist edit form? */}
         <Route
           path="/playlists/:playlistId(\d+)/edit"
           render={(props) => {
             return <PlaylistEditForm {...props} />;
           }}
         />
-{/* this is the authentication feature, redirects user to login when playlist is */}
+        {/* this is the authentication feature, redirects user to login when playlist is */}
         <Route
           exact
           path="/playlists"
@@ -77,6 +79,12 @@ class ApplicationViews extends Component {
                 {...props}
               />
             );
+          }}
+        />
+        <Route
+          path="/users/new"
+          render={(props) => {
+            return <RegisterForm {...props} />;
           }}
         />
       </React.Fragment>
