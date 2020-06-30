@@ -43,7 +43,7 @@ class RegisterForm extends Component {
 
           // Create the user and redirect user to ?????home
           PlaylistManager.add(users).then(() =>
-            this.props.history.push("/home")
+            this.props.history.push("/playlists")
           );
         }
       } else {

@@ -13,20 +13,6 @@
       "lastName": "Houston",
       "email": "MaryHouston@email.com",
       "password": 78910
-    },
-    {
-      "firstName": "Amanda",
-      "lastName": "Campbell",
-      "email": "Mandy@email.com",
-      "password": "123",
-      "id": 4
-    },
-    {
-      "firstName": "Darrell",
-      "lastName": "Simpkins",
-      "email": "Darrell@email.com",
-      "password": "677",
-      "id": 5
     }
   ],
   "songs": [
@@ -114,11 +100,6 @@
       "id": 4,
       "playlistTitle": "Get Hype!",
       "userId": 2
-    },
-    {
-      "playlistTitle": "Happy Songs",
-      "userId": "4",
-      "id": 5
     }
   ]
 }
