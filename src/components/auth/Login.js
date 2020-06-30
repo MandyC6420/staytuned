@@ -23,7 +23,7 @@ class Login extends Component {
     .then((users) => {
       console.log(users)
       if(users[0] === undefined ) {
-        window.alert("User not found!")
+        window.alert("User not found, please register!")
         console.log(users[0])
       }
       else{
@@ -45,7 +45,7 @@ class Login extends Component {
     //     })
     // )
     // I don't know
-    this.props.history.push("/playlists");
+    this.props.history.push("/home");
 
   }})}
 // renders login form
