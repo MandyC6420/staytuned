@@ -8,6 +8,7 @@ import Login from "./auth/Login";
 import { Redirect } from "react-router";
 import PlaylistEditForm from "./playlist/PlaylistEditForm";
 import RegisterForm from "./auth/RegisterForm";
+import CreatePlaylistForm from "./playlist/CreatePlaylistForm"
 
 // logs in user?????I don't know what else
 class ApplicationViews extends Component {
@@ -63,6 +64,17 @@ class ApplicationViews extends Component {
           render={(props) => {
             return (
               <CreateSongForm
+                playlistId={parseInt(props.match.params.playlistId)}
+                {...props}
+              />
+            );
+          }}
+        />
+        <Route
+          path="/playlists/new/:id(\d+)"
+          render={(props) => {
+            return (
+              <CreatePlaylistForm
                 playlistId={parseInt(props.match.params.playlistId)}
                 {...props}
               />

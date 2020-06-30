@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PlaylistManager from "../../modules/PlaylistManager";
 import "./RegisterForm.css";
+// import { SearchResults } from "semantic-ui-react";
 
 //sets state for register information
 class RegisterForm extends Component {
@@ -23,20 +24,30 @@ class RegisterForm extends Component {
   //creates new user, sets state
   constructNewUser = (evt) => {
     evt.preventDefault();
-    if (this.state.email === "" || this.state.password === "") {
-      window.alert("Please input Email and Password");
-    } else {
-      this.setState({ loadingStatus: true });
-      const users = {
-        firstName: this.state.firstName,
-        lastName: this.state.lastName,
-        email: this.state.email,
-        password: this.state.password,
-      };
+    //playlist manager fetch call used
+    PlaylistManager.getByEmail(this.state.email).then((users) => {
+      console.log(users);
+      if (users.length === 0) {
+        if (this.state.email === "" || this.state.password === "") {
+          window.alert("Please input Email and Password");
+        } else {
+          this.setState({ loadingStatus: true });
+          const users = {
+            firstName: this.state.firstName,
+            lastName: this.state.lastName,
+            email: this.state.email,
+            password: this.state.password,
+          };
 
-      // Create the user and redirect user to ?????home
-      PlaylistManager.add(users).then(() => this.props.history.push("/home"));
-    }
+          // Create the user and redirect user to ?????home
+          PlaylistManager.add(users).then(() =>
+            this.props.history.push("/home")
+          );
+        }
+      } else {
+        window.alert("This email is unavailable");
+      }
+    });
   };
   //creates form
   render() {
@@ -49,7 +60,7 @@ class RegisterForm extends Component {
                 type="text"
                 required
                 onChange={this.handleFieldChange}
-                id="userName"
+                id="firstName"
                 placeholder="First Name"
               />
               <label htmlFor="firstName">First name</label>
@@ -60,7 +71,7 @@ class RegisterForm extends Component {
                 id="lastName"
                 placeholder="Last Name"
               />
-              <label htmlFor="userName">Last name</label>
+              <label htmlFor="lastName">Last name</label>
               <input
                 type="text"
                 required

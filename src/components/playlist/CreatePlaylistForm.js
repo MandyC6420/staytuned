@@ -15,15 +15,15 @@ class CreatePlaylistForm extends Component {
     };
   
     // it is the create new song ???
-    constructNewSong = (evt) => {
+    constructNewPlaylist = (evt) => {
       evt.preventDefault();
-        const users = {
+        const playlists = {
           playlistId: this.props.playlistId,
           
         };
   
-        PlaylistManager.post(users).then(() =>
-          this.props.history.push(`/users/${this.props.user}`)
+        PlaylistManager.post(playlists).then(() =>
+          this.props.history.push(`/playlists/${this.props.playlists}`)
         );
       }
     

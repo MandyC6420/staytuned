@@ -8,8 +8,10 @@ export default {
   getByEmail(email) {
     return fetch(`${remoteURL}/users?email=${email}`).then((result) =>
       result.json()
+      
     );
   },
+ 
   // getAllplaylists fetches the playlist and the user id with it in local storage
   getAllplaylists() {
     return fetch(`${remoteURL}/playlists?userId=${localStorage.getItem("id")}`).then((result) => result.json()
