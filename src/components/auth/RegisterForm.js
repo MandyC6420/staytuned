@@ -27,10 +27,12 @@ class RegisterForm extends Component {
     //playlist manager fetch call used
     PlaylistManager.getByEmail(this.state.email).then((users) => {
       console.log(users);
+      //if the user types in nothing into inputs a window alert appears
       if (users.length === 0) {
         if (this.state.email === "" || this.state.password === "") {
           window.alert("Please input Email and Password");
         } else {
+          //this sets state
           this.setState({ loadingStatus: true });
           const users = {
             firstName: this.state.firstName,
