@@ -35,14 +35,14 @@ class PlaylistCard extends Component {
               <h3>
                 {/* Playlist name:{" "} */}
                 <span className="card-playlist-name">
-                  {/* {this.props.playlists.playlistTitle} */}
+                  {/* {this.props.users.id} */}
                   {/* <button
                 type="button"
                 onClick={() =>
-                  this.props.deletesong(this.props.songs.id)
+                  this.props.createform(this.props.user.id)
                 }
               >
-               Delete Song
+               Create New Playlist
               </button> */}
                   {/* not sure */}
                   {/* <button
@@ -57,7 +57,7 @@ class PlaylistCard extends Component {
               </button> */}
                 </span>
               </h3>
-              {/* <p></p> */}
+              
             </Card.Content>
           </Card>
         </div>
