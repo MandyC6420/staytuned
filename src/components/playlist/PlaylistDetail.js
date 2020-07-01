@@ -12,7 +12,7 @@ class PlaylistDetail extends Component {
     songs: [],
     loadingStatus: true,
   };
-//tells playlist manaer how to delete a song?
+  //tells playlist manaer how to delete a song?
   deleteSongs = (id) => {
     this.setState({ loadingStatus: true });
     console.log("I'm in the delete function!");
@@ -30,7 +30,7 @@ class PlaylistDetail extends Component {
       //    });
     });
   };
-//I'm not sure what this does, 
+  //I'm not sure what this does,
   componentDidMount() {
     console.log("PlaylistDetail: ComponentDidMount");
     //gets playlist id from manager?
@@ -43,40 +43,41 @@ class PlaylistDetail extends Component {
       });
     });
   }
-//renders song card?
+  //renders song card?
   render() {
     console.log("PlaylistList: Render");
     return (
-      <div className="card">
-        <div className="card-content">
-          {/* <picture>
+      
+        <div className="card">
+          <div className="card-content">
+            {/* <picture>
             <img src={require("./dog.svg")} alt="My Dog" />
           </picture> */}
-{/* //puts song in state? */}
-<button
-          type="button"
-          className="btn"
-          onClick={() => {
-            this.props.history.push(`/songs/new/${this.props.playlistId}`);
-          }}
-        >
-          Create New Song
-        </button>
-          <h3>Name:{this.state.songTitle}</h3>
-
-          {this.state.songs.map((song) => {
-            return (
-              <SongCard
-                key={song.id}
-                song={song}
-                deleteSongs={this.deleteSongs}
-                {...this.props}
-              />
-            );
-          })}
+            {/* //puts song in state? */}
+            <button
+              type="button"
+              className="btn"
+              onClick={() => {
+                this.props.history.push(`/songs/new/${this.props.playlistId}`);
+              }}
+            >
+              Create New Song
+            </button>
+            <h3>Name:{this.state.songTitle}</h3>
+            <div className="Song-Card-Container">
+            {this.state.songs.map((song) => {
+              return (
+                <SongCard
+                  key={song.id}
+                  song={song}
+                  deleteSongs={this.deleteSongs}
+                  {...this.props}
+                />
+              );
+            })}
+          </div>
+          {/* does this refresh back to the playlist with the new song */}
         </div>
-        {/* does this refresh back to the playlist with the new song */}
-        
       </div>
     );
   }
