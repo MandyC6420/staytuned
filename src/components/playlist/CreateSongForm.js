@@ -31,7 +31,7 @@ class CreateSongForm extends Component {
         songs: this.state.songs,
         url: this.state.url,
         playlistId: this.props.playlistId,
-        artist: this.state.artist,
+        artist: this.state.artist
       };
 
       PlaylistManager.post(songs).then(() =>
@@ -67,8 +67,8 @@ class CreateSongForm extends Component {
                 type="text"
                 required
                 onChange={this.handleFieldChange}
-                id="Artist"
-                placeholder="Artist"
+                id="artist"
+                placeholder="artist"
               />
             </div>
             <div className="alignRight">

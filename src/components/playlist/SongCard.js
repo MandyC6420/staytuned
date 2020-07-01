@@ -29,7 +29,7 @@ class SongCard extends Component {
             //deletes songs from playlist and brings back the rest of the playlist
             onClick={() => {
               this.props.deleteSongs(this.props.song.id);
-              this.props.history.push(`/playlists/${this.props.playlistId}`);
+              // this.props.history.push(`/playlists/${this.props.playlistId}`);
               // this.props.artist(this.props.artist)
             }}
           >
