@@ -1,5 +1,5 @@
 .card h3 {
-  color:turquoise;
+  color: turquoise;
   margin: 1em;
 }
 .header {
@@ -17,5 +17,10 @@
   margin: auto;
   padding: 0.5em;
 }
-
+.card button{
+  width: fit-content;
+}
+div.card{
+  flex-direction: row;
+}
 

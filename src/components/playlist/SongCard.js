@@ -15,29 +15,39 @@ class SongCard extends Component {
             <Card.Header>{this.props.song.songTitle}</Card.Header>
             {/* pulls url from json */}
             <Card.Description>
-              <span className="date">{this.props.song.url}</span>
+              <iframe
+                width="200"
+                height="275"
+                src={this.props.song.url}
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              {/* <span className="date">{this.props.song.url}</span> */}
             </Card.Description>
 
             <Card.Description>
-            <span className="date">{this.props.song.artist}</span>
+              <h3>
+                <span className="date">{this.props.song.artist}</span>
+              </h3>
             </Card.Description>
-          {/* </Card.Content> */}
-          <Button
-            id="Button1"
-            type="button"
-            // disabled={this.state.loadingStatus}
-            //deletes songs from playlist and brings back the rest of the playlist
-            onClick={() => {
-              this.props.deleteSongs(this.props.song.id);
-              // this.props.history.push(`/playlists/${this.props.playlistId}`);
-              // this.props.artist(this.props.artist)
-            }}
-          >
-            {/* <Button fluid>Delete</Button> */}
-             Delete 
-          </Button> 
+            {/* </Card.Content> */}
+            <Button
+              // id="Button1"
+              // type="button"
+              // disabled={this.state.loadingStatus}
+              //deletes songs from playlist and brings back the rest of the playlist
+              onClick={() => {
+                this.props.deleteSongs(this.props.song.id);
+                // this.props.history.push(`/playlists/${this.props.playlistId}`);
+                // this.props.artist(this.props.artist)
+              }}
+            >
+              {/* <Button fluid>Delete</Button> */}
+              Delete
+            </Button>
           </Card.Content>
-        </Card> 
+        </Card>
 
         <div className="card-content">
           <h3>
@@ -49,7 +59,6 @@ class SongCard extends Component {
           </h3>
         </div>
         <section className="section-content"></section>
-        
       </div>
     );
   }

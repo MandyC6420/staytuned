@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PlaylistCard from "./PlaylistCard";
 import PlaylistManager from "../../modules/PlaylistManager";
 import "./../playlist/PlaylistCard";
+import "./PlaylistList.css";
 
 class PlaylistList extends Component {
   // sets state

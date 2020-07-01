@@ -3,7 +3,9 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
-    background: aliceblue;
+    background: black;
+    width: 60rem;
+    
   }
   
   .card-content h3 {
@@ -11,6 +13,10 @@
     margin-bottom: .5em;
     font-weight: bold;
     color: rgb(43, 112, 241);
+    
+  }
+  .card-content {
+    
   }
   
   .card-content p {
@@ -38,4 +44,14 @@
   
   .card button:hover {
     background-color: darkblue;
+  }
+  .container-cards {
+   
+  }
+  .Song-Card-Container{
+    display: flex;
+    height: 100vh;
+    max-width: auto;
+    flex-direction: column;
+    
   }

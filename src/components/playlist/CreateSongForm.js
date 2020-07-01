@@ -68,7 +68,7 @@ class CreateSongForm extends Component {
                 required
                 onChange={this.handleFieldChange}
                 id="artist"
-                placeholder="artist"
+                placeholder="Artist"
               />
             </div>
             <div className="alignRight">

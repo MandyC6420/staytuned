@@ -21,56 +21,70 @@
       "songTitle": "Lovely Day",
       "playlistId": 1,
       "artist": "Bill Withers",
-      "url": "https://www.youtube.com/watch?v=oaLDut30Br0"
+      "url": "https://www.youtube.com/embed/oaLDut30Br0"
     },
     {
       "id": 4,
       "songTitle": "Lifetime",
       "playlistId": 2,
       "artist": "Maxwell",
-      "url": "https://www.youtube.com/watch?v=gMAHTZ2nBvk"
+      "url": "https://www.youtube.com/embed/ieNWZBf2X18"
     },
     {
       "id": 1,
       "songTitle": "Use Me",
       "playlistId": 2,
       "artist": "Bill Withers",
-      "url": "https://www.youtube.com/watch?v=EZldnP0lhHA"
-    },
-    {
-      "songTitle": "Could've Been",
-      "id": 5,
-      "playlistId": 2,
-      "artist": "H.E.R. ft.  Bryson Tiller",
-      "url": "https://www.youtube.com/watch?v=4hYCmPBlmwc"
+      "url": "https://www.youtube.com/embed/EZldnP0lhHA"
     },
     {
       "id": 6,
       "songTitle": "Come Down",
       "playlistId": 4,
       "artist": "Anderson Paak",
-      "url": "https://www.youtube.com/watch?v=-OqrcUvrbRY"
+      "url": "https://www.youtube.com/embed/dRc5p2TnAXA"
     },
     {
       "songTitle": "Punky Reggae Party",
-      "url": "https://www.youtube.com/watch?v=DvsaNOeCVHw",
+      "url": "https://www.youtube.com/embed/DvsaNOeCVHw",
       "playlistId": 4,
       "artist": "Bob Marley",
       "id": 7
     },
     {
       "songTitle": "A Sunday Kind of Love",
-      "url": "https://www.youtube.com/watch?v=bQCdnv44cyo",
+      "url": "https://www.youtube.com/embed/bQCdnv44cyo?start=4",
       "playlistId": 2,
       "artist": "Etta James",
       "id": 8
     },
     {
       "songTitle": "All I could do was cry",
-      "url": "https://www.youtube.com/watch?v=3Pc9BmXN998",
+      "url": "https://www.youtube.com/embed/3Pc9BmXN998",
       "playlistId": 3,
       "artist": "Etta James",
       "id": 9
+    },
+    {
+      "songTitle": "We are the Champions",
+      "url": "https://www.youtube.com/embed/04854XqcfCY?start=6",
+      "playlistId": 4,
+      "artist": "Queen",
+      "id": 10
+    },
+    {
+      "songTitle": "Could've Been",
+      "url": "https://www.youtube.com/embed/zHZVV02osIw",
+      "playlistId": 2,
+      "artist": "H.E.R.",
+      "id": 11
+    },
+    {
+      "songTitle": "Jet Airliner",
+      "url": "https://www.youtube.com/embed/cHBvCXTW9CE",
+      "playlistId": 5,
+      "artist": "Steve Miller Band",
+      "id": 12
     }
   ],
   "playlists": [
@@ -93,6 +107,11 @@
       "id": 4,
       "playlistTitle": "Get Hype!",
       "userId": 2
+    },
+    {
+      "playlistTitle": "sweet memories",
+      "userId": "2",
+      "id": 5
     }
   ]
 }
