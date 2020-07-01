@@ -62,7 +62,7 @@ class PlaylistDetail extends Component {
         >
           Create New Song
         </button>
-          <h3>Name:{this.state.name}</h3>
+          <h3>Name:{this.state.songTitle}</h3>
 
           {this.state.songs.map((song) => {
             return (
