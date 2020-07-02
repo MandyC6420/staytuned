@@ -1,6 +1,6 @@
 /* title of playlist on the song "Get Hype"*/
 .card h3 {
-  color: aqua;
+  color: slategrey;
   margin: 1em;
 }
 /* gives title of playlist on playlist details more room */
@@ -16,9 +16,10 @@
 }
 /* all of my cards, except the video */
 .card {
-  width: 28em;
+  /* width: em; */
   /* margin: auto; */
-  padding: 75em;
+  padding: 70em;
+  /* overflow-x:; */
 }
 
 /* text in create new song button */

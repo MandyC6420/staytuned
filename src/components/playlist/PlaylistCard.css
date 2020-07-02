@@ -39,9 +39,9 @@ div.card {
 .card button:hover {
   background-color: darkorchid;
 } */
-/* playlist 1 display flex caused all the cards to go into a horizontal line */
+/* playlist1 display flex caused all the cards to go into a horizontal line */
 .container-cards {
-  background-color: aqua;
+  background-color:aqua;
   margin: auto;
   padding: 0.5em;
   /* width: fit-content; */
