@@ -19,30 +19,31 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
-.section-container{
-    padding: 1.5em;
-}
+/* .section-container{
+    padding: 24em;
+} */
 
-.section-content{
-    text-align: center;
-}
+/* .section-content{
+    text-align: right;
+} */
 
-.container-cards{
+/* .container-cards{
     display: flex;
     flex-wrap: wrap;
+    color: red;
     /* justify-content: center; */
-}
+/* } */
 
-.card{
-    width: 25vw;
+/* .card{
+    width: 75vw;
     padding: 1em;
     margin: 1em;
     border: 1x solid gray;
-}
+} */
 
-img{
+/* img{
     display: block;
     height: auto;
     border-radius: 50%;
-    width: 80%
-}
+    width: 60%
+} */

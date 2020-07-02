@@ -1,26 +1,31 @@
+/* title of playlist on the song "Get Hype"*/
 .card h3 {
-  color: turquoise;
+  color: aqua;
   margin: 1em;
 }
+/* gives title of playlist on playlist details more room */
 .header {
   margin-top: 0;
   margin-bottom: 1em;
-  width: 15em;
+  width: 35em;
   font-weight: bold;
 }
-
+/* space between artist name and video on song card */
 .description {
   margin: 1em;
 }
+/* all of my cards, except the video */
 .card {
-  width: 20em;
-  margin: auto;
-  padding: 0.5em;
-}
-.card button{
-  width: fit-content;
-}
-div.card{
-  flex-direction: row;
+  width: 28em;
+  /* margin: auto; */
+  padding: 75em;
 }
 
+/* text in create new song button */
+.card button {
+  width: fit-content;
+  color: aqua;
+}
+/* div.card{
+  flex-direction: row;
+} */

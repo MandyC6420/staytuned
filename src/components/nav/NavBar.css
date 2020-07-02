@@ -6,18 +6,18 @@ small {
     background-color:darkorchid;
     border: 3px;
   }
-  
+  /* Stay Tuned title */
   .site-title {
-    color:paleturquoise;
+    color: aqua;
     text-align: center;
   }
-  
+  /* nav bar styling (horizontal or stacked) */
   nav .container {
     display: flex;
     padding: 0;
     margin-bottom: 0;
   }
-  
+  /* aqua strip that holds nav components */
   nav .container li {
     flex: 1;
     padding: 10px;
@@ -28,11 +28,11 @@ small {
     background-color:aqua;
     list-style-type: none;
   }
-  
+  /* text color in aqua strip of nav bar */
   nav .container a {
     color:darkorchid;
   }
-  
+  /* button hover over navbar routes */
   nav .container a:hover {
     color: darkslategrey;
   }

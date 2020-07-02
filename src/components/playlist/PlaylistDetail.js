@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PlaylistManager from "../../modules/PlaylistManager";
-import "./PlaylistDetail.css";
+// import "./PlaylistDetail.css";
 // import { Link } from "react-router-dom";
 import SongCard from "./SongCard";
 // import { Card } from "semantic-ui-react";
@@ -12,7 +12,7 @@ class PlaylistDetail extends Component {
     songs: [],
     loadingStatus: true,
   };
-  //tells playlist manaer how to delete a song?
+  //tells playlist manager how to delete a song?
   deleteSongs = (id) => {
     this.setState({ loadingStatus: true });
     console.log("I'm in the delete function!");
@@ -63,7 +63,7 @@ class PlaylistDetail extends Component {
             >
               Create New Song
             </button>
-            <h3>Name:{this.state.songTitle}</h3>
+            <h3>Name:{this.state.name}</h3>
             <div className="Song-Card-Container">
             {this.state.songs.map((song) => {
               return (
