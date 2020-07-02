@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import PlaylistManager from "../../modules/PlaylistManager";
-// import "./PlaylistDetail.css";
-// import { Link } from "react-router-dom";
 import SongCard from "./SongCard";
-// import { Card } from "semantic-ui-react";
 
 //sets state??
 class PlaylistDetail extends Component {
@@ -47,24 +44,23 @@ class PlaylistDetail extends Component {
   render() {
     console.log("PlaylistList: Render");
     return (
-      
-        <div className="card">
-          <div className="card-content">
-            {/* <picture>
+      <div className="card">
+        <div className="card-content">
+          {/* <picture>
             <img src={require("./dog.svg")} alt="My Dog" />
           </picture> */}
-            {/* //puts song in state? */}
-            <button
-              type="button"
-              className="btn"
-              onClick={() => {
-                this.props.history.push(`/songs/new/${this.props.playlistId}`);
-              }}
-            >
-              Create New Song
-            </button>
-            <h3>Name:{this.state.name}</h3>
-            <div className="Song-Card-Container">
+          {/* //puts song in state? */}
+          <button
+            type="button"
+            className="btn"
+            onClick={() => {
+              this.props.history.push(`/songs/new/${this.props.playlistId}`);
+            }}
+          >
+            Create New Song
+          </button>
+          <h3>Name:{this.state.name}</h3>
+          <div className="Song-Card-Container">
             {this.state.songs.map((song) => {
               return (
                 <SongCard

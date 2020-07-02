@@ -29,7 +29,7 @@ class CreateSongForm extends Component {
       const songs = {
         songTitle: this.state.songName,
         songs: this.state.songs,
-        url: this.state.url,
+        url: this.state.url.replace("watch?v=", "embed/"),
         playlistId: this.props.playlistId,
         artist: this.state.artist
       };
