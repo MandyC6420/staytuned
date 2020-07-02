@@ -30,7 +30,7 @@ class PlaylistCard extends Component {
                 {/* <span className="date">{this.props.playlists.playlistTitle}</span> */}
               </Card.Description>
               <Link to={`/playlists/${this.props.playlists.id}`}>
-                <Button fluid>Details</Button>
+                <Button>Details</Button>
               </Link>
               <h3>
                 {/* Playlist name:{" "} */}

@@ -16,7 +16,8 @@
 }
 /* all of my cards, except the video */
 .card {
- margin: auto;
+display: flex;
+flex-wrap: wrap;
   
 }
 

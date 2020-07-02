@@ -92,6 +92,48 @@
       "playlistId": 5,
       "artist": "Patsy Cline",
       "id": 13
+    },
+    {
+      "songTitle": "High Fashion",
+      "url": "https://www.youtube.com/embed/P1VCSwuvV4M",
+      "playlistId": 7,
+      "artist": "Roddy Rich - High Fashion (Clean - Lyrics) ft. Mustard",
+      "id": 14
+    },
+    {
+      "songTitle": "No Role Modelz ",
+      "url": "https://www.youtube.com/embed/7_NtS-uVWKQ",
+      "playlistId": 6,
+      "artist": "J. Cole",
+      "id": 15
+    },
+    {
+      "songTitle": "No Guidance",
+      "url": "https://www.youtube.com/embed/b7oBbE0fRXA",
+      "playlistId": 8,
+      "artist": "Chris Brown feat. Drake",
+      "id": 16
+    },
+    {
+      "songTitle": "Nessun dorma",
+      "url": "https://www.youtube.com/embed/raJkCwQB2CY",
+      "playlistId": 5,
+      "artist": "Luciano Pavarotti",
+      "id": 17
+    },
+    {
+      "songTitle": "Don't stop believing",
+      "url": "https://www.youtube.com/embed/VcjzHMhBtf0",
+      "playlistId": 9,
+      "artist": "Journey",
+      "id": 18
+    },
+    {
+      "songTitle": "Skid-a-mir-ink-a-dink-a-dink",
+      "url": "https://www.youtube.com/embed/ug1pI-Ephns",
+      "playlistId": 10,
+      "artist": "Kids",
+      "id": 19
     }
   ],
   "playlists": [
@@ -102,7 +144,7 @@
     },
     {
       "id": 2,
-      "playlistTitle": "Love Songs!!!",
+      "playlistTitle": "Love Songs",
       "userId": 2
     },
     {
@@ -116,14 +158,34 @@
       "userId": 2
     },
     {
-      "playlistTitle": "sweet memories",
-      "userId": "2",
-      "id": 5
+      "id": 5,
+      "playlistTitle": "Sweet Memories",
+      "userId": "2"
     },
     {
       "playlistTitle": "New Playlist 3",
       "userId": "2",
       "id": 6
+    },
+    {
+      "playlistTitle": "Brand new songs 4",
+      "userId": "2",
+      "id": 7
+    },
+    {
+      "playlistTitle": "Crazy songs for Capstone",
+      "userId": "2",
+      "id": 8
+    },
+    {
+      "playlistTitle": "Capstone Playlist",
+      "userId": "2",
+      "id": 9
+    },
+    {
+      "id": 10,
+      "playlistTitle": "Last Submit",
+      "userId": "3"
     }
   ]
 }

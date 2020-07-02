@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PlaylistManager from "../../modules/PlaylistManager";
 import SongCard from "./SongCard";
+import "./PlaylistList.css"
 
 //sets state??
 class PlaylistDetail extends Component {

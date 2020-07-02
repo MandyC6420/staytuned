@@ -46,6 +46,7 @@ div.card {
   padding: 0.5em;
   /* width: fit-content; */
  display: flex;
- overflow-y: scroll;
+ flex-wrap: wrap;
+ /* overflow-y: scroll; */
  
 }

@@ -47,7 +47,6 @@
 /* the card that has the Create new song button on it in playlist 2 prints in Playlist Detail*/
 .Song-Card-Container {
   display: flex;
-  height: 0.25vh;
-  max-width: auto;
-  overflow-y: visible;
+  flex-wrap: wrap;
+  justify-content: center;
 }
