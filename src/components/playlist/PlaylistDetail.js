@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PlaylistManager from "../../modules/PlaylistManager";
-import "./PlaylistDetail.css";
+// import "./PlaylistDetail.css";
 // import { Link } from "react-router-dom";
 import SongCard from "./SongCard";
 // import { Card } from "semantic-ui-react";
@@ -12,7 +12,7 @@ class PlaylistDetail extends Component {
     songs: [],
     loadingStatus: true,
   };
-  //tells playlist manaer how to delete a song?
+  //tells playlist manager how to delete a song?
   deleteSongs = (id) => {
     this.setState({ loadingStatus: true });
     console.log("I'm in the delete function!");

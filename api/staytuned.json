@@ -85,6 +85,20 @@
       "playlistId": 5,
       "artist": "Steve Miller Band",
       "id": 12
+    },
+    {
+      "songTitle": "Hold Ya Head - The Notorious B.I.G (feat. Bob Marley)",
+      "url": "https://www.youtube.com/embed/M72qgmGhhzY?start=2",
+      "playlistId": 5,
+      "artist": "Biggie",
+      "id": 13
+    },
+    {
+      "songTitle": "Before I Let Go",
+      "url": "https://www.youtube.com/embed/W5WTjqZuL_c?start=2",
+      "playlistId": 2,
+      "artist": "Frankie Beverley and Maze",
+      "id": 14
     }
   ],
   "playlists": [
@@ -109,14 +123,10 @@
       "userId": 2
     },
     {
-      "id": 5,
-      "playlistTitle": "sweet memories!!",
+      "id": 6,
+      "playlistTitle": "Happy Songs",
       "userId": "2"
     },
-    {
-      "playlistTitle": "New Playlist",
-      "userId": "2",
-      "id": 6
-    }
+    
   ]
 }

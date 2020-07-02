@@ -1,30 +1,31 @@
-
-
+/* this is the white card with all the card info inside it under playlist only */
 div.card {
   background-color: darkorchid;
+  padding: 0.88em;
+  
 }
-
+/* the margin on this one is interesting on playlist 2 song cards */
 .card-content h3 {
-  margin-top: 1;
+  margin-top: 1em;
   margin-bottom: 3em;
-  width: 20em;
-  font-weight: bold;
-  color: blueviolet
+  /* display: ;
+  font-weight: bold; */
+  /* color: red; */
 }
-
+/* no idea what this does */
 .card-content p {
   font-size: 80%;
-  color: darkorchid;
+  /* color: red; */
 }
 
-.card-playlist-name {
-  color:aqua;
-}
+/* .card-playlist-name {
+  color: red;
+} */
 
 .card button {
-  background-color: darkcyan;
+  /* background-color: red; */
   border: none;
-  color:aqua;
+  color: aqua;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -34,15 +35,17 @@ div.card {
   margin: 0.3em;
   width: 20%;
 }
-
+/* 
 .card button:hover {
-  background-color:darkorchid;
-}
-
+  background-color: darkorchid;
+} */
+/* playlist 1 display flex caused all the cards to go into a horizontal line */
 .container-cards {
+  background-color: aqua;
+  margin: auto;
+  padding: 0.5em;
+  /* width: fit-content; */
+ display: flex;
+ overflow-y: scroll;
  
-background-color: aqua;
-margin: 2em;
-padding: 0.5em;
-
 }
