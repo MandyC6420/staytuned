@@ -1,4 +1,4 @@
-/* title of playlist on the song "Get Hype"*/
+/* title of playlist on the song "Get Hype" and name of artist in song card*/
 .card h3 {
   color: slategrey;
   margin: 1em;
@@ -16,10 +16,8 @@
 }
 /* all of my cards, except the video */
 .card {
-  /* width: em; */
-  /* margin: auto; */
-  padding: 70em;
-  /* overflow-x:; */
+ margin: auto;
+  
 }
 
 /* text in create new song button */
