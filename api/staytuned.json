@@ -13,6 +13,20 @@
       "lastName": "Houston",
       "email": "MaryHouston@email.com",
       "password": 78910
+    },
+    {
+      "firstName": "silly",
+      "lastName": "name",
+      "email": "sillyemail@email.com",
+      "password": "456",
+      "id": 3
+    },
+    {
+      "firstName": "Juniper",
+      "lastName": "Day",
+      "email": "Junie@email.com",
+      "password": "123",
+      "id": 4
     }
   ],
   "songs": [
@@ -71,13 +85,6 @@
       "playlistId": 4,
       "artist": "Queen",
       "id": 10
-    },
-    {
-      "songTitle": "Could've Been",
-      "url": "https://www.youtube.com/embed/zHZVV02osIw",
-      "playlistId": 2,
-      "artist": "H.E.R.",
-      "id": 11
     },
     {
       "songTitle": "Jet Airliner",
@@ -143,10 +150,10 @@
       "id": 20
     },
     {
-      "songTitle": "Daniel Caesar",
+      "songTitle": "Best Part (feat. H.E.R.)",
       "url": "https://www.youtube.com/embed/iKk6_2-AAGc",
       "playlistId": 2,
-      "artist": "Best Part (feat. H.E.R.)",
+      "artist": "Daniel Caesar",
       "id": 21
     },
     {
@@ -155,6 +162,20 @@
       "playlistId": 9,
       "artist": "Queen",
       "id": 22
+    },
+    {
+      "songTitle": "Bulls on Parade",
+      "url": "https://www.youtube.com/embed/3L4YrGaR8E4",
+      "playlistId": 13,
+      "artist": "Rage against the Machine",
+      "id": 23
+    },
+    {
+      "songTitle": "Chicka Chicka Boom Boom",
+      "url": "https://www.youtube.com/embed/XJv6MoR3d3Y",
+      "playlistId": 14,
+      "artist": "Chicka Chicka Boom Boom",
+      "id": 24
     }
   ],
   "playlists": [
@@ -209,8 +230,18 @@
       "userId": "3"
     },
     {
-      "id": 11,
-      "playlistTitle": "Happy Songs!!!!",
+      "id": 12,
+      "playlistTitle": "Juniper's Songs",
+      "userId": "4"
+    },
+    {
+      "playlistTitle": "Ragers!",
+      "userId": "2",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "playlistTitle": "Brock's playlist",
       "userId": "2"
     }
   ]
