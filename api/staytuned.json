@@ -66,13 +66,6 @@
       "id": 7
     },
     {
-      "songTitle": "A Sunday Kind of Love",
-      "url": "https://www.youtube.com/embed/bQCdnv44cyo?start=4",
-      "playlistId": 2,
-      "artist": "Etta James",
-      "id": 8
-    },
-    {
       "songTitle": "All I could do was cry",
       "url": "https://www.youtube.com/embed/3Pc9BmXN998",
       "playlistId": 3,
@@ -176,6 +169,20 @@
       "playlistId": 14,
       "artist": "Chicka Chicka Boom Boom",
       "id": 24
+    },
+    {
+      "songTitle": "U 2 Luv",
+      "url": "https://www.youtube.com/embed/OdiLrboD3f8",
+      "playlistId": 2,
+      "artist": "Neyo & Jeremih",
+      "id": 25
+    },
+    {
+      "songTitle": "Bubbles!",
+      "url": "https://www.youtube.com/embed/Enbvtr78mqo",
+      "playlistId": 14,
+      "artist": "Blippi and The Bubbleologist",
+      "id": 26
     }
   ],
   "playlists": [
@@ -243,6 +250,11 @@
       "id": 14,
       "playlistTitle": "Brock's playlist",
       "userId": "2"
+    },
+    {
+      "playlistTitle": "",
+      "userId": null,
+      "id": 15
     }
   ]
 }
