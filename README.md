@@ -5,7 +5,7 @@ variety of playlists.  It's easy for our favorite tune to get lost in the shuffl
 How to Start the App:
 1.  Either fork this repository to create your own local repository or clone it down to run it.
 2.  After making sure you are in the /src directory in the terminal (if not, cd into it), run npm install in the project directory in the terminal to install the necessary packages to allow the app to function properly.
-3.  Run json-server -p 5002 -w staytuned.json in the project directory's api folder in order to initiate the database. These steps will let you run a json server with the trip.json which will allow all of the fetch calls in modules to interact with that data.
+3.  Run json-server -p 5002 -w staytuned.json in the project directory's api folder in order to initiate the database. These steps will let you run a json server with the staytuned.json.
 4.  In a separate terminal window, start the app by running npm start which will run the app in the development mode by opening http://localhost:3000 in browser.
 
 Login/Register:
