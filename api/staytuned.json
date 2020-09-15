@@ -13,13 +13,27 @@
       "lastName": "Houston",
       "email": "MaryHouston@email.com",
       "password": 78910
+    },
+    {
+      "firstName": "silly",
+      "lastName": "name",
+      "email": "sillyemail@email.com",
+      "password": "456",
+      "id": 3
+    },
+    {
+      "firstName": "Juniper",
+      "lastName": "Day",
+      "email": "Junie@email.com",
+      "password": "123",
+      "id": 4
     }
   ],
   "songs": [
     {
       "id": 2,
       "songTitle": "Lovely Day",
-      "playlistId": 1,
+      "playlistId": 6,
       "artist": "Bill Withers",
       "url": "https://www.youtube.com/embed/oaLDut30Br0"
     },
@@ -33,7 +47,7 @@
     {
       "id": 1,
       "songTitle": "Use Me",
-      "playlistId": 2,
+      "playlistId": 6,
       "artist": "Bill Withers",
       "url": "https://www.youtube.com/embed/EZldnP0lhHA"
     },
@@ -52,13 +66,6 @@
       "id": 7
     },
     {
-      "songTitle": "A Sunday Kind of Love",
-      "url": "https://www.youtube.com/embed/bQCdnv44cyo?start=4",
-      "playlistId": 2,
-      "artist": "Etta James",
-      "id": 8
-    },
-    {
       "songTitle": "All I could do was cry",
       "url": "https://www.youtube.com/embed/3Pc9BmXN998",
       "playlistId": 3,
@@ -71,13 +78,6 @@
       "playlistId": 4,
       "artist": "Queen",
       "id": 10
-    },
-    {
-      "songTitle": "Could've Been",
-      "url": "https://www.youtube.com/embed/zHZVV02osIw",
-      "playlistId": 2,
-      "artist": "H.E.R.",
-      "id": 11
     },
     {
       "songTitle": "Jet Airliner",
@@ -97,13 +97,13 @@
       "songTitle": "High Fashion",
       "url": "https://www.youtube.com/embed/P1VCSwuvV4M",
       "playlistId": 7,
-      "artist": "Roddy Rich - High Fashion (Clean - Lyrics) ft. Mustard",
+      "artist": "Roddy Rich -ft. Mustard",
       "id": 14
     },
     {
       "songTitle": "No Role Modelz ",
       "url": "https://www.youtube.com/embed/7_NtS-uVWKQ",
-      "playlistId": 6,
+      "playlistId": 7,
       "artist": "J. Cole",
       "id": 15
     },
@@ -134,6 +134,55 @@
       "playlistId": 10,
       "artist": "Kids",
       "id": 19
+    },
+    {
+      "songTitle": "Rainbow Connection",
+      "url": "https://www.youtube.com/embed/WS3Lkc6Gzlk",
+      "playlistId": 9,
+      "artist": "Kermit the Frog",
+      "id": 20
+    },
+    {
+      "songTitle": "Best Part (feat. H.E.R.)",
+      "url": "https://www.youtube.com/embed/iKk6_2-AAGc",
+      "playlistId": 2,
+      "artist": "Daniel Caesar",
+      "id": 21
+    },
+    {
+      "songTitle": "We are the Champions",
+      "url": "https://www.youtube.com/embed/04854XqcfCY",
+      "playlistId": 9,
+      "artist": "Queen",
+      "id": 22
+    },
+    {
+      "songTitle": "Bulls on Parade",
+      "url": "https://www.youtube.com/embed/3L4YrGaR8E4",
+      "playlistId": 13,
+      "artist": "Rage against the Machine",
+      "id": 23
+    },
+    {
+      "songTitle": "Chicka Chicka Boom Boom",
+      "url": "https://www.youtube.com/embed/XJv6MoR3d3Y",
+      "playlistId": 14,
+      "artist": "Chicka Chicka Boom Boom",
+      "id": 24
+    },
+    {
+      "songTitle": "U 2 Luv",
+      "url": "https://www.youtube.com/embed/OdiLrboD3f8",
+      "playlistId": 2,
+      "artist": "Neyo & Jeremih",
+      "id": 25
+    },
+    {
+      "songTitle": "Bubbles!",
+      "url": "https://www.youtube.com/embed/Enbvtr78mqo",
+      "playlistId": 14,
+      "artist": "Blippi and The Bubbleologist",
+      "id": 26
     }
   ],
   "playlists": [
@@ -163,29 +212,49 @@
       "userId": "2"
     },
     {
-      "playlistTitle": "New Playlist 3",
+      "playlistTitle": "Smooth",
       "userId": "2",
       "id": 6
     },
     {
-      "playlistTitle": "Brand new songs 4",
-      "userId": "2",
-      "id": 7
+      "id": 7,
+      "playlistTitle": "New Hip Hop",
+      "userId": "2"
     },
     {
-      "playlistTitle": "Crazy songs for Capstone",
-      "userId": "2",
-      "id": 8
+      "id": 8,
+      "playlistTitle": "R & B",
+      "userId": "2"
     },
     {
-      "playlistTitle": "Capstone Playlist",
-      "userId": "2",
-      "id": 9
+      "id": 9,
+      "playlistTitle": "Courtney's Capstone Playlist",
+      "userId": "2"
     },
     {
       "id": 10,
       "playlistTitle": "Last Submit",
       "userId": "3"
+    },
+    {
+      "id": 12,
+      "playlistTitle": "Juniper's Songs",
+      "userId": "4"
+    },
+    {
+      "playlistTitle": "Ragers!",
+      "userId": "2",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "playlistTitle": "Brock's playlist",
+      "userId": "2"
+    },
+    {
+      "playlistTitle": "",
+      "userId": null,
+      "id": 15
     }
   ]
 }

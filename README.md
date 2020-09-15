@@ -1,3 +1,28 @@
+Hi!  I'm excited to share my app Stay Tuned with you.
+This app allows music lovers to organize their favorite YouTube Videos into a 
+variety of playlists.  It's easy for our favorite tune to get lost in the shuffle. Stay Tuned can help organize your music videos to keep the party going!
+
+How to Start the App:
+1.  Either fork this repository to create your own local repository or clone it down to run it.
+2.  After making sure you are in the /src directory in the terminal (if not, cd into it), run npm install in the project directory in the terminal to install the necessary packages to allow the app to function properly.
+3.  Run json-server -p 5002 -w staytuned.json in the project directory's api folder in order to initiate the database. These steps will let you run a json server with the trip.json which will allow all of the fetch calls in modules to interact with that data.
+4.  In a separate terminal window, start the app by running npm start which will run the app in the development mode by opening http://localhost:3000 in browser.
+
+Login/Register:
+When the user starts the app, the first page they will see is the login/register page prompting them to press one of the two buttons.
+
+If the user has already registered for an account and is returning to the app, they can select the login button, which will take them to a page where they will prompted for their email and password. To view an account with playlists use login:  MaryHouston@email.com password:  78910
+
+If they are a first time user, they should register for an account, which will direct them to a page prompting them for a name, email, and password.
+
+After login, you're ready to create a playlist with YouTube videos!  You'll select create a playlist, where you'll find the option to Create a New Song.  Choose a song from YouTube and create your new song to add to your playlist!
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
